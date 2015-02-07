@@ -1,0 +1,636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!-- saved from url=(0052)http://learn.javascript.ru/named-function-expression -->
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" version="XHTML+RDFa 1.0" dir="ltr" class="js"><head profile="http://www.w3.org/1999/xhtml/vocab"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="webmoney.attestation.label" content="webmoney attestation label#40DF25E3-33CE-4524-8E7D-149B6AFD6BC1"> 
+  
+<link rel="next" href="http://learn.javascript.ru/global-object">
+<link rel="shortcut icon" href="http://learn.javascript.ru/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="up" href="http://learn.javascript.ru/functions-closures">
+<link rel="shortlink" href="http://learn.javascript.ru/node/340">
+<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="./Именованные функциональные выражения   Учебник JavaScript_files/Именованные функциональные выражения   Учебник JavaScript.htm">
+<link rel="prev" href="http://learn.javascript.ru/function-declaration-expression">
+  <title>Именованные функциональные выражения  | Учебник JavaScript</title>
+  <meta property="og:title" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/named-function-expression">
+  <meta property="og:site_name" content="JavaScript.ru">
+  <meta property="fb:admins" content="100001562528165">
+  <script type="text/javascript" async="" src="./Именованные функциональные выражения   Учебник JavaScript_files/watch.js"></script><script id="facebook-jssdk" src="./Именованные функциональные выражения   Учебник JavaScript_files/all.js"></script><script src="./Именованные функциональные выражения   Учебник JavaScript_files/ga.js"></script><script id="gplus" async="" src="./Именованные функциональные выражения   Учебник JavaScript_files/plusone.js"></script><script id="twitter-wjs" src="./Именованные функциональные выражения   Учебник JavaScript_files/widgets.js"></script><script>if (window.devicePixelRatio > 1) document.cookie='hires=1; path=/';
+  </script>
+
+  <link type="text/css" rel="stylesheet" href="./Именованные функциональные выражения   Учебник JavaScript_files/css_lT8TuQt2oyYuRahF2kdAzRK8TS4mCOGCqX4AM6iVWXw.css" media="all">
+  <script type="text/javascript" src="./Именованные функциональные выражения   Учебник JavaScript_files/js_r7yXfs4GlNaQRDS8XDyhjM-hUHfFb1AEN278gyhHg8A.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$ = jQuery;
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+  SyntaxHighlighter.config.clipboardSwf = '/modules/syntaxhighlighter/clipboard.swf';
+  $(function() {
+    SyntaxHighlighter.highlight();
+    })
+  
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"analytic","theme_token":"CiaE7_3Z6L8Hh3U-rTWVMBRR5hffV_sNAZyynaZKlL0","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.9\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"public:\/\/languages\/ru_9dlpwq9NGc9ma765uWKT7X6nspvGsev0NJuQXawFIuI.js":1,"modules\/dhtml_menu\/dhtml_menu.js":1,"modules\/editor\/user.js":1,"modules\/editor\/hotkeys.js":1,"modules\/mistype\/mistype.js":1,"modules\/myfilter\/myfilter.js":1,"modules\/mytheme\/misc.js":1,"modules\/myutils\/jquery.cookie.js":1,"modules\/myutils\/jquery.alerts.js":1,"modules\/myutils\/jquery-migrate-1.1.1.js":1,"modules\/myutils\/misc.js":1,"files\/tutorial\/js\/dom.js":1,"files\/tutorial\/js\/misc.js":1,"files\/tutorial\/js\/lodash.js":1,"modules\/syntaxhighlighter\/sh\/scripts\/shCore.js":1,"modules\/syntaxhighlighter\/sh\/scripts\/shBrushCss.js":1,"modules\/syntaxhighlighter\/sh\/scripts\/shBrushJava.js":1,"modules\/syntaxhighlighter\/sh\/scripts\/shBrushJScript.js":1,"modules\/syntaxhighlighter\/sh\/scripts\/shBrushPhp.js":1,"modules\/syntaxhighlighter\/sh\/scripts\/shBrushPlain.js":1,"modules\/syntaxhighlighter\/sh\/scripts\/shBrushXml.js":1,"modules\/disqus\/disqus.js":1,"0":1,"1":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/simplenews\/simplenews.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/date\/date_api\/date.css":1,"modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"modules\/views\/css\/views.css":1,"modules\/ctools\/css\/ctools.css":1,"modules\/dhtml_menu\/dhtml_menu.css":1,"modules\/myutils\/jquery.alerts.css":1,"modules\/myutils\/misc.css":1,"modules\/syntaxhighlighter\/sh\/styles\/shCore.css":1,"modules\/syntaxhighlighter\/sh\/styles\/shThemeDefault.css":1,"themes\/analytic\/style.css":1,"themes\/analytic\/local.css":1,"themes\/analytic\/linkindication.css":1}},"dhtmlMenu":{"nav":"none","animation":{"effects":{"height":"height","opacity":"opacity","width":0},"speed":"500"},"effects":{"siblings":"close-same-tree","children":"none","remember":"0"},"filter":{"type":"blacklist","list":{"book-toc-246":0,"book-toc-297":0,"book-toc-511":0,"book-toc-67":0,"main-menu":0,"management":0,"navigation":0,"shortcut-set-1":0,"user-menu":0}}},"disqus":{"domain":"learnjavascriptru","url":"http:\/\/learn.javascript.ru\/named-function-expression","title":"\u0418\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0435 \u0432\u044b\u0440\u0430\u0436\u0435\u043d\u0438\u044f ","identifier":"node\/340"}});
+//--><!]]>
+</script>
+  
+<script src="./Именованные функциональные выражения   Учебник JavaScript_files/share.php"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f2f2f2;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3b5998;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29447e;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f2f2f2;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fbpluginrecommendationsbarleft,.fbpluginrecommendationsbarright{position:fixed !important;bottom:0;z-index:999}.fbpluginrecommendationsbarleft{left:10px}.fbpluginrecommendationsbarright{right:10px}</style></head>
+<body id="body" class="html not-front not-logged-in no-sidebars page-node page-node- page-node-340 node-type-book disqus-processed">
+
+    
+<iframe name="resizer" src="./Именованные функциональные выражения   Учебник JavaScript_files/iframe-resize.htm" style="display:none"></iframe>
+
+<div class="make-it-center">
+
+
+
+<div class="rws-primary-menu clearfix">
+  <ul class="links primary-links">
+    <li>
+      <a href="http://javascript.ru/">JavaScript.ru</a>
+          </li>
+    <li><a href="http://learn.javascript.ru/">Учебник</a></li>
+    <li><a href="http://learn.javascript.ru/play">Песочница</a></li>
+
+    <li><a href="http://es5.javascript.ru/">Спецификация ES5</a></li>
+    <li><a href="http://javascript.ru/forum">Форум</a></li>
+    <li><a href="http://learn.javascript.ru/chat">Чат</a></li>
+    <li><a href="http://javascript.ru/courses">Курсы</a></li>
+
+    <li style="float:right"><form action="./Именованные функциональные выражения   Учебник JavaScript_files/Именованные функциональные выражения   Учебник JavaScript.htm" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline" style="margin-top:12px">
+<input type="text" maxlength="128" placeholder=" Найти" name="search_block_form" id="edit-search-block-form-1" value="" class="form-text"><input type="image" style="background:inherit;border:none;height:17px;padding:0;margin:0 5px 0 3px" src="./Именованные функциональные выражения   Учебник JavaScript_files/gray-arrow-right.png" name="op" id="edit-submit-button" value="" class="form-submit">
+   <input type="hidden" name="form_build_id" id="IyeNsox3PZAHAA0XS6E2JnDFtAyU1dGui0D77s89A_Y" value="IyeNsox3PZAHAA0XS6E2JnDFtAyU1dGui0D77s89A_Y">
+<input type="hidden" name="form_token" id="edit-search-block-form-form-token" value="MZa2VoEjnfPher3t8CLjON9bBHTvNkXEy2WEZL3frJQ">
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form">
+</div>
+</div></form></li>
+  </ul>
+
+</div>
+
+
+<div id="content-toggler" class="content-toggler">
+  <span class="content-toggler-hide">Содержание (скрыть)</span>
+  <span class="content-toggler-show">Содержание (показать)</span>
+</div>
+<ul class="sec-list" id="submenu-info">
+  <li class="sec-item"><a href="http://javascript.ru/manual">Справочник</a></li>
+  <li class="sec-item"><a href="http://learn.javascript.ru/user">Вход на сайт</a></li>
+  <li class="sec-item"><a href="http://learn.javascript.ru/nodejs-screencast">Скринкаст по Node.JS</a></li>
+  <li class="sec-item"><a href="http://learn.javascript.ru/about">О сайте</a></li>
+</ul>
+
+
+<!-- admin panel   -->
+<!-- / admin panel -->
+
+
+
+<div class="column-wrapper">
+
+
+
+
+
+
+
+<!-- column-2 --><div class="column-2 
+no-left-column
+">
+
+
+		        
+
+
+<!-- PRINTING BLOCKS BEFORE THE CONTENT (with RED headers) -->
+<!-- PRINTING BLOCKS BEFORE THE CONTENT (with RED headers) -->
+
+
+    <h2 class="element-invisible">Вы здесь</h2><div class="breadcrumb"><a href="http://javascript.ru/">Главная</a> » <a href="http://learn.javascript.ru/tutorial">Учебник</a> » <a href="http://learn.javascript.ru/functions-closures">Функции и замыкания</a></div>		
+        <div class="book-navigation book-navigation-upper" id="book-navigation-340">
+                <div class="page-links clearfix">
+                        <a title="Go to previous page" class="page-previous" href="http://learn.javascript.ru/function-declaration-expression">‹ Function Declaration и Function Expression</a>
+            
+                        <a title="Go to next page" class="page-next" href="http://learn.javascript.ru/global-object">Глобальный объект                ›</a>
+                    </div>
+
+    </div>
+    
+		
+
+
+    <h1 class="title">Именованные функциональные выражения </h1>		
+		
+
+                         
+
+
+
+		<!-- main-content-block --><div class="main-content-block"> 
+		  <div class="region region-content">
+      <div class="block block-open 
+  block-system clearfix" id="block-system-main">
+      
+   <div class="content clearfix">
+
+
+
+<div oncanplay="1" class="clearfix node node-nid-340  node-book node node-book ">
+    
+
+    
+    <ol class="toc-full">
+<li><a href="http://learn.javascript.ru/named-function-expression#named-function-expression">Named Function Expression</a></li>
+<li><a href="http://learn.javascript.ru/named-function-expression#пример-использования">Пример использования</a></li>
+<li><a href="http://learn.javascript.ru/named-function-expression#итого">Итого</a></li></ol>
+
+        
+    <div class="content clearfix ">
+
+
+    
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"> <p>Обычно то, что называют «именем функции» — на самом деле, является именем переменной, в которую присвоена функция. К самой функции это «имя» никак не привязано. Если функцию переместить в другую переменную — она сменит «имя»:</p>
+<p></p><div id="highlighter_2180905174" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_2180905174_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_2180905174" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">function</code> <code class="plain">f() { alert(1); };</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="plain">g = f;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="plain">f = 0;</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="plain">g(); </code><code class="comments">// сменили имя f на g!</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Однако, есть в JavaScript способ указать имя, действительно привязанное к функции. Оно называется <code>Named Function Expression</code> (NFE) или, по-русски, <em>именованное функциональное выражение</em>.<br><!--break--><br>
+<a name="functions-nfe"></a></p>
+<h2><a name="named-function-expression" href="http://learn.javascript.ru/named-function-expression#named-function-expression" id="named-function-expression">Named Function Expression</a></h2>
+<p>Простейший пример NFE выглядит так:
+</p><div id="highlighter_44292123895" class="syntaxhighlighter nogutter  "><div class="lines"><div class="line alt1"><table><tbody><tr><td class="content"><code class="keyword">var</code> <code class="plain">f = </code><code class="keyword">function</code> <code class="plain"><u>sayHi</u>(...) { </code><code class="comments">/* тело функции */</code> <code class="plain">};</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Проще говоря, NFE — это <code>Function Expression</code> с дополнительным именем (в примере выше <code>sayHi</code>).</p>
+<p>Что же это за имя, которое идёт в дополнение к переменной <code>f</code>, и зачем оно?</p>
+<p><strong>Имя функционального выражения (<code>sayHi</code>) имеет особый смысл. Оно доступно только изнутри самой функции.</strong> </p>
+<p><strong>Это ограничение видимости входит в стандарт JavaScript и поддерживается всеми браузерами, кроме IE8-.</strong></p>
+<p>Например:</p>
+<p></p><div id="highlighter_42605545046" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_42605545046_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_42605545046" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">var</code> <code class="plain">f = </code><code class="keyword">function</code> <code class="plain">sayHi(name) {</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">alert(sayHi); </code><code class="comments">// изнутри функции - видно (выведет код функции) </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="plain">};</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="plain">alert(sayHi); </code><code class="comments">// снаружи - не видно (ошибка: undefined variable 'sayHi')</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Ещё одно принципиальное отличие имени от обычной переменной заключается в том, что его нельзя перезаписать:</p>
+<p></p><div id="highlighter_16427820781" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_16427820781_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_16427820781" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">var</code> <code class="plain">test = </code><code class="keyword">function</code> <code class="plain">sayHi(name) {</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">sayHi = </code><code class="string">"тест"</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="plain">alert(sayHi); </code><code class="comments">// function... (перезапись не удалась)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="plain">};</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>6</code></td><td class="content"><code class="plain">test();</code></td></tr></tbody></table></div></div></div><p></p>
+<p>В режиме <code>use strict</code> код выше выдал бы ошибку.</p>
+<p></p><div class="smart"><div class="smart-header">Устаревшее специальное значение <code>arguments.callee</code></div> <p>Если вы работали с JavaScript, то, возможно, знаете, что для этой цели также служило специальное значение <code>arguments.callee</code>. </p>
+<p>Если это название вам ни о чём не говорит — всё в порядке, читайте дальше, мы обязательно обсудим его <a href="http://learn.javascript.ru/arguments-pseudoarray#arguments-callee">в отдельной главе</a>.</p>
+<p>Если же вы в курсе, то стоит иметь в виду, что оно официально исключено из современного стандарта. А NFE — это наше настоящее. </p>
+ </div><p></p>
+<h2><a name="пример-использования" href="http://learn.javascript.ru/named-function-expression#пример-использования" id="пример-использования">Пример использования</a></h2>
+<p>NFE используется в первую очередь в тех ситуациях, когда функцию нужно передавать в другое место кода или перемещать из одной переменной в другую. </p>
+<p><strong>Внутреннее имя позволяет функции надёжно обращаться к самой себе, где бы она ни находилась.</strong></p>
+<p>Вспомним, к примеру, функцию-факториал из задачи <a href="http://learn.javascript.ru/task/vychislit-faktorial">Вычислить факториал</a>:</p>
+<p></p><div id="highlighter_93639401300" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_93639401300_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_93639401300" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">function</code> <code class="plain">f(n) { </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n ? n*f(n-1) : 1;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="plain">};</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="plain">alert( f(5) ); </code><code class="comments">// 120</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Попробуем перенести её в другую переменную:</p>
+<p></p><div id="highlighter_62915566773" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_62915566773_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_62915566773" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">function</code> <code class="plain">f(n) { </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n ? n*f(n-1) : 1;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="plain">};</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1 highlighted"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="keyword">var</code> <code class="plain">g = f;</code></td></tr></tbody></table></div><div class="line alt2 highlighted"><table><tbody><tr><td class="number"><code>6</code></td><td class="content"><code class="plain">f = </code><code class="keyword">null</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>7</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>8</code></td><td class="content"><code class="plain">alert( g(5) ); </code><code class="comments">// ошибка при выполнении!</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Ошибка возникла потому что функция из своего кода обращается к своему старому имени <code>f</code>. А этой функции уже нет, <code>f = null</code>.</p>
+<p>Для того, чтобы функция всегда надёжно работала, объявим её как Named Function Expression:</p>
+<p></p><div id="highlighter_72617596388" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_72617596388_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_72617596388" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">var</code> <code class="plain">f = </code><code class="keyword">function</code> <code class="plain"><u>factorial</u>(n) { </code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="spaces">&nbsp;&nbsp;</code><code class="keyword">return</code> <code class="plain">n ? n*<u>factorial</u>(n-1) : 1;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="plain">};</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="spaces">&nbsp;</code>&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="keyword">var</code> <code class="plain">g = f;&nbsp; </code><code class="comments">// скопировали ссылку на функцию-факториал в g</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>6</code></td><td class="content"><code class="plain">f = </code><code class="keyword">null</code><code class="plain">;</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>7</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2 highlighted"><table><tbody><tr><td class="number"><code>8</code></td><td class="content"><code class="plain">alert( g(5) ); </code><code class="comments">// 120, работает!</code></td></tr></tbody></table></div></div></div><p></p>
+<p></p><div class="warn"><div class="warn-header">В браузере IE8- создаются две функции</div> <p>
+Как мы говорили выше, в браузере IE до 9 версии имя NFE видно везде, что является ошибкой с точки зрения стандарта… Но на самом деле ситуация еще забавнее. </p>
+<p>Старый IE создаёт в таких случаях целых две функции: одна записывается в переменную <code>f</code>, а вторая — в переменную <code>factorial</code>.</p>
+<p>Например:
+</p><div id="highlighter_40256243595" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_40256243595_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_40256243595" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="keyword">var</code> <code class="plain">f = </code><code class="keyword">function</code> <code class="plain">factorial(n) { </code><code class="comments">/*...*/</code> <code class="plain">};</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content"><code class="comments">// в IE8- false</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="comments">// в остальных браузерах ошибка, т.к. имя factorial не видно</code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>5</code></td><td class="content"><code class="plain">alert(f === factorial);</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Все остальные браузеры полностью поддерживают именованные функциональные выражения.</p>
+ </div><p></p>
+<h2><a name="итого" href="http://learn.javascript.ru/named-function-expression#итого" id="итого">Итого</a></h2>
+<p>Если функция задана как Function Expression, её можно дать имя. Оно будет доступно только внутри функции (кроме IE8-) и предназначено для надёжного рекурсивного вызова функции, даже если она записана в другую переменную.</p>
+<p>Далее в учебнике мы посмотрим ещё примеры применения Named Function Expression для удобства разработки.</p>
+<p></p><div class="clearfix task-embedded node-nid-169 node node-learning-task ">
+
+
+
+
+<p class="learning-task-marks">
+  <abbr title="Насколько эта задача важна для освоения материала, от 1 до 5">Важность:</abbr> 5</p>
+
+<div class="task-formulation"> <p>Каков будет результат выполнения кода? </p>
+<p></p><div id="highlighter_13335843734" class="syntaxhighlighter nogutter  "><div class="lines"><div class="line alt1"><table><tbody><tr><td class="content"><code class="keyword">function</code> <code class="plain">g() { </code><code class="keyword">return</code> <code class="plain">1; }</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="content"><code class="plain">alert(g);</code></td></tr></tbody></table></div></div></div><p></p>
+<p>А такого? Будет ли разница, если да — почему?
+</p><div id="highlighter_75389667251" class="syntaxhighlighter nogutter  "><div class="lines"><div class="line alt1"><table><tbody><tr><td class="content"><code class="plain">(</code><code class="keyword">function</code> <code class="plain">g() { </code><code class="keyword">return</code> <code class="plain">1; });</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="content"><code class="plain">alert(g);</code></td></tr></tbody></table></div></div></div><p></p>
+ </div>
+
+
+
+<div class="task-hint-open">
+  Решение</div>
+
+<div class="task-hint">
+      <div class="task-solution-header">Решение</div>
+   
+    
+<p><strong>Первый код выведет <code>function ...</code>, второй — ошибку во всех браузерах, кроме IE8-.</strong></p>
+<p></p><div id="highlighter_88725427701" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_88725427701_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_88725427701" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="comments">// обычное объявление функции (Function Declaration)</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="keyword">function</code> <code class="plain">g() { </code><code class="keyword">return</code> <code class="plain">1; }; </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="plain">alert(g); </code><code class="comments">// функция</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Во втором коде скобки есть, значит функция внутри является не <code>Function Declaration</code>, а частью выражения, то есть <code>Named Function Expression</code>. Его имя видно только внутри, снаружи переменная <code>g</code> не определена.</p>
+<p></p><div id="highlighter_98074735794" class="syntaxhighlighter  "><div class="bar"><div class="toolbar"><div class="item copyToClipboard"><embed width="16" height="16" id="highlighter_98074735794_clipboard" type="application/x-shockwave-flash" title="копировать в буфер" allowscriptaccess="always" wmode="transparent" flashvars="highlighterId=highlighter_98074735794" menu="false" src="/modules/syntaxhighlighter/clipboard.swf"></div><a href="http://learn.javascript.ru/named-function-expression#viewSource" title="показать чистый исходник в новом окне" class="item viewSource" style="width: 16px; height: 16px;">показать чистый исходник в новом окне</a><a href="http://learn.javascript.ru/named-function-expression#noList" title="Скрыть/показать номера строк" class="item noList" style="width: 16px; height: 16px;">Скрыть/показать номера строк</a><a href="http://learn.javascript.ru/named-function-expression#printSource" title="печать кода с сохранением подсветки" class="item printSource" style="width: 16px; height: 16px;">печать кода с сохранением подсветки</a></div></div><div class="lines"><div class="run-toolbar"><input type="button" class="run-button" value="Запустить" style="width: 100px;"><a href="http://learn.javascript.ru/named-function-expression#" title="Редактировать" class="edit-button">&nbsp;&nbsp;&nbsp;</a></div><div class="line alt1"><table><tbody><tr><td class="number"><code>1</code></td><td class="content"><code class="comments">// Named Function Expression!</code></td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>2</code></td><td class="content"><code class="plain">(</code><code class="keyword">function</code> <code class="plain">g() { </code><code class="keyword">return</code> <code class="plain">1; }); </code></td></tr></tbody></table></div><div class="line alt1"><table><tbody><tr><td class="number"><code>3</code></td><td class="content">&nbsp;</td></tr></tbody></table></div><div class="line alt2"><table><tbody><tr><td class="number"><code>4</code></td><td class="content"><code class="plain">alert(g);&nbsp; </code><code class="comments">// Ошибка!</code></td></tr></tbody></table></div></div></div><p></p>
+<p>Все браузеры, кроме IE8-, поддерживают это ограничение видимости и выведут ошибку, ‘undefined variable’.</p></div>
+
+
+<div style="text-align:right;margin-bottom:-3px">
+
+<a href="http://learn.javascript.ru/task/proverka-na-nfe">[Открыть задачу в новом окне]</a></div>
+
+
+
+</div>
+
+
+
+<p></p>
+ </div></div></div>
+<div id="book-navigation-246" class="book-navigation">
+    
+    
+        <div class="page-links clearfix">
+                        <a href="http://learn.javascript.ru/function-declaration-expression" class="page-previous" title="На предыдущую страницу">‹ Function Declaration и Function Expression</a>
+                                    <a title="Go to next page" class="page-next" href="http://learn.javascript.ru/global-object">Глобальный объект                ›</a>
+                    </div>
+        
+</div>
+
+        </div>
+
+        <div class="node-details">
+        <div class="submitted">13.08.2011</div>
+        <div class="author"><a href="http://ikantor.moikrug.ru/">Илья Кантор</a></div>
+    </div>
+    
+
+    
+    
+        <br style="clear:both">
+
+        <div class="footer-share">
+      <div style="margin-bottom:-3px">Если статья понравилась — поделитесь ей! Выберите одно или несколько:</div>
+
+<style>
+.share-list li {
+  float: left;
+  padding-top: 4px;
+  list-style: none;
+  margin: 5px;
+}
+.share-list {
+margin: 0;
+padding: 0;
+}
+</style>
+<ul class="share-list">
+<li>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru" data-size="large" data-count="none" style="display:block">Твитнуть</a>
+</li>
+<li>
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s);js.id=id;
+    js.src="http://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,"script","twitter-wjs");
+</script>
+
+<a href="http://vkontakte.ru/share.php?url=http%3A//learn.javascript.ru/named-function-expression&title=%D0%98%D0%BC%D0%B5%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20" title="Опубликовать ссылку на статью ВКонтакте" target="_blank" class="vkontakte" style="display:inline-block" onclick="window.open(this.href, &#39;Опубликовать ссылку на пост в Вконтакте&#39;, &#39;width=600,height=300&#39;); return false">Поделиться</a>
+</li>
+
+<li style="padding:0">
+<g:plusone annotation="none" size="standard"></g:plusone>
+
+<script>
+  window.___gcfg = {lang: 'ru'};
+
+  (function() {
+    if (document.getElementById('gplus')) return;
+    var po = document.createElement('script'); po.id = 'gplus'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+
+
+</script>
+
+</li>
+<li>
+<div style="display:inline-block" class="fb-like fb_iframe_widget" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=112959575461438&amp;font=arial&amp;href=http%3A%2F%2Flearn.javascript.ru%2Fnamed-function-expression&amp;layout=button_count&amp;locale=ru_RU&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=300"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f17871659" width="300px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="about:blank" style="border: none; visibility: hidden;"></iframe></span></div>
+</li>
+</ul>
+
+<br style="clear:both">
+    </div>
+
+    <h2>Комментарии</h2>
+    <ol>
+    <li>Приветствуются комментарии, содержащие дополнения и вопросы по статье, и ответы на них.</li>
+    <li>Если ваш комментарий касается задачи – откройте её в отдельном окне и напишите там.</li>
+    <li>Для кода внутри строки используйте тег <code>&lt;code&gt;</code>, для блока кода – тег <code>&lt;pre&gt;</code>, если больше 10 строк – ссылку на <a href="http://learn.javascript.ru/play">песочницу</a>.</li>
+    <li>Если что-то непонятно – пишите, что именно и с какого места.</li>
+    </ol>
+        
+        <div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="about:blank" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 0px !important;"></iframe></div>    
+    <div style="clear:both"></div>
+
+</div>
+</div>
+ </div>
+  </div>
+		<!-- /main-content-block --></div>
+		
+        
+
+
+
+<!-- PRINTING BLOCK AFTER THE CONTENT -->
+
+
+
+
+
+<div style="text-align:center"><a href="http://learn.javascript.ru/named-function-expression#body">Наверх</a></div>
+
+
+<!-- / column-2 --></div>
+
+
+
+<!-- column-3 -->
+<script>
+applyRightColumnHidden();
+</script>
+<div class="column-3">  <div class="region region-right">
+      <div class="block block-open 
+  block-block clearfix" id="block-block-1">
+      	<a href="http://learn.javascript.ru/named-function-expression#" class="block-title"><div class="title-toggle">»</div>PDF учебника</a>
+      
+   <div class="content clearfix"> <ul><li><a href="http://learn.javascript.ru/content/uchebnik-pdf-dlya-pechati">Для печати: 350р (~10$)</a></li>
+<li><a href="http://learn.javascript.ru/content/uchebnik-pdf-dlya-chteniya-s-ustroystv">Для чтения с устройств: 350р</a></li>
+<li><a href="http://learn.javascript.ru/content/uchebnik-pdf-dlya-chteniya-i-pechati">Оба варианта: 450р (~15$)</a></li>
+</ul> </div>
+ </div>
+  <div class="block block-open 
+  block-book clearfix" id="block-book-navigation">
+      	<a href="http://learn.javascript.ru/named-function-expression#" class="block-title"><div class="title-toggle">»</div>Содержание</a>
+      
+   <div class="content clearfix"><ul class="menu"><li class="first collapsed"><a href="http://learn.javascript.ru/getting-started">Общая информация</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/first-steps">Основы JavaScript</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/writing-js">Пишем на JavaScript</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/data-structures">Структуры данных</a></li>
+<li class="expanded active-trail"><a href="http://learn.javascript.ru/functions-closures" class="active-trail">Функции и замыкания</a><ul class="menu"><li class="first leaf"><a href="http://learn.javascript.ru/function-is-value">Функция - это значение</a></li>
+<li class="leaf"><a href="http://learn.javascript.ru/function-declaration-expression">Function Declaration и Function Expression</a></li>
+<li class="leaf active-trail"><a href="./Именованные функциональные выражения   Учебник JavaScript_files/Именованные функциональные выражения   Учебник JavaScript.htm" class="active-trail active">Именованные функциональные выражения </a></li>
+<li class="leaf"><a href="http://learn.javascript.ru/global-object">Глобальный объект</a></li>
+<li class="leaf"><a href="http://learn.javascript.ru/closures">Замыкания, функции изнутри</a></li>
+<li class="leaf"><a href="http://learn.javascript.ru/closures-usage">Хранение данных в замыкании, модули</a></li>
+<li class="leaf"><a href="http://learn.javascript.ru/static-variables">Статические переменные</a></li>
+<li class="last leaf"><a href="http://learn.javascript.ru/with">Конструкция "with" </a></li>
+</ul></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/function-arguments">Аргументы функций</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/objects-more">Объекты и методы</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/types">Получение и проверка типа</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/additional">Разные темы</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/css-for-js">CSS для JavaScript-разработчика </a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/document">Документ и объекты страницы</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/events-and-interfaces">События, взаимодействие с посетителем</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/animation">Анимация</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/jquery-stub">jQuery: курс немолодого бойца [в работе]</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/widgets">Создание графических компонентов</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/inheritance-prototypes">Продвинутая работа с объектами</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/optimize">Оптимизация</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/compress">Сжатие JavaScript</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/extra">Разное</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/frames-and-windows">Окна и Фреймы</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/regular-expressions-javascript">Регулярные выражения [в работе]</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/tools">Сундучок с инструментами</a></li>
+<li class="collapsed"><a href="http://learn.javascript.ru/hooray">Ура, я знаю JavaScript!</a></li>
+<li class="last collapsed"><a href="http://learn.javascript.ru/ajax">AJAX</a></li>
+</ul></div>
+ </div>
+  <div class="block block-open 
+  block-block clearfix" id="block-block-8">
+      	<a href="http://learn.javascript.ru/named-function-expression#" class="block-title"><div class="title-toggle">»</div>Видео-версия учебника</a>
+      
+   <div class="content clearfix"> <ul><li><a style="white-space:nowrap" href="http://learn.javascript.ru/content/video-versiya-pervoy-chasti-uchebnika">Видео по 1й части учебника: 900р.</a></li>
+</ul> </div>
+ </div>
+  <div class="block block-open 
+  block-block clearfix" id="block-block-3">
+      	<a href="http://learn.javascript.ru/named-function-expression#" class="block-title"><div class="title-toggle">»</div>Полезная реклама</a>
+      
+   <div class="content clearfix"><div style="text-align:center"><a href="http://www.jetbrains.com/webstorm/?utm_source=javascript.ru&utm_medium=banner2&utm_campaign=webstorm" style="display:block;width:200px;height:200px;background:url(/files/ad/ws_2.png)"></a></div>
+
+</div>
+ </div>
+  <div class="block block-open 
+  block-mistype clearfix" id="block-mistype-mistype">
+      	<a href="http://learn.javascript.ru/named-function-expression#" class="block-title"><div class="title-toggle">»</div>Нашли опечатку?</a>
+      
+   <div class="content clearfix">Нашли опечатку на сайте? Что-то кажется странным?
+Выделите соответствующий текст и нажмите Ctrl+Enter!</div>
+ </div>
+  <div class="block block-open 
+  block-disqus clearfix" id="block-disqus-disqus_recent_comments">
+      	<a href="http://learn.javascript.ru/named-function-expression#" class="block-title"><div class="title-toggle">»</div>Последние комментарии</a>
+      
+   <div class="content clearfix"><div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="./Именованные функциональные выражения   Учебник JavaScript_files/recent_comments_widget.js"></script> <style type="text/css" media="screen">	 .dsq-widget ul.dsq-widget-list {	 padding: 0;	 margin: 0;	 text-align: left;	 }	 img.dsq-widget-avatar {	 width: 32px;	 height: 32px;	 border: 0px;	 margin: 0px;	 padding: 0px 3px 3px 0px;	 float: left;	 }	 a.dsq-widget-user {	 font-weight: bold;	 }	 a.dsq-widget-thread {	 font-weight: bold;	 }	 p.dsq-widget-meta {	 clear: both;	 font-size: 80%;	 padding: 0;	 margin: 0;	 }	 li.dsq-widget-item {	 margin: 15px 0;	 list-style-type: none;	 clear: both;	 }	 span.dsq-widget-clout {	 padding: 0 2px;	 background-color: #ff7300;	 color: #fff;	 }	 table.dsq-widget-horiz td {	 padding-right: 15px;	 }	 .dsq-widget-comment p {	 display: inline;	 }	 </style>	 <ul class="dsq-widget-list">	 <li class="dsq-widget-item">	 <a href="http://disqus.com/kill_windows/"><img class="dsq-widget-avatar" src="./Именованные функциональные выражения   Учебник JavaScript_files/avatar92.jpg"></a>	 <a class="dsq-widget-user" href="http://disqus.com/kill_windows/">kill_windows</a>	 <span class="dsq-widget-comment"><p>Еще ситуацию может прояснить, если почитать что такое анонимные функции.</p></span>	 <p class="dsq-widget-meta"><a href="http://learn.javascript.ru/closures">Замыкания, функции изнутри</a>&nbsp;·&nbsp;<a href="http://learn.javascript.ru/closures#comment-1594379282">29 minutes ago</a></p>	 </li>	 <li class="dsq-widget-item">	 <img class="dsq-widget-avatar" src="./Именованные функциональные выражения   Учебник JavaScript_files/noavatar92.png">	 Gert	 <span class="dsq-widget-comment"><p>Потому что это объект. И скобки не круглые, а фигурные.</p></span>	 <p class="dsq-widget-meta"><a href="http://learn.javascript.ru/websockets">WebSocket </a>&nbsp;·&nbsp;<a href="http://learn.javascript.ru/websockets#comment-1593910702">11 hours ago</a></p>	 </li>	 <li class="dsq-widget-item">	 <img class="dsq-widget-avatar" src="./Именованные функциональные выражения   Учебник JavaScript_files/noavatar92.png">	 Филя	 <span class="dsq-widget-comment"><p>Потому что инкремент изменяет значение переменной.</p></span>	 <p class="dsq-widget-meta"><a href="http://learn.javascript.ru/task/inkrement-i-dekrement-primery">Инкремент и декремент, примеры</a>&nbsp;·&nbsp;<a href="http://learn.javascript.ru/task/inkrement-i-dekrement-primery#comment-1593909151">11 hours ago</a></p>	 </li>	 <li class="dsq-widget-item">	 <img class="dsq-widget-avatar" src="./Именованные функциональные выражения   Учебник JavaScript_files/noavatar92.png">	 Марат	 <span class="dsq-widget-comment"><p>Допустим в первом расчёте где ты получаешь 'а' , ты же присваиваешь всё это переменной 'а'... почему b=7, c=5 ведь они участвуют лишь для получения результата переменной 'a'?</p></span>	 <p class="dsq-widget-meta"><a href="http://learn.javascript.ru/task/inkrement-i-dekrement-primery">Инкремент и декремент, примеры</a>&nbsp;·&nbsp;<a href="http://learn.javascript.ru/task/inkrement-i-dekrement-primery#comment-1593556203">15 hours ago</a></p>	 </li>	 <li class="dsq-widget-item">	 <a href="http://disqus.com/rodionmescheryakov/"><img class="dsq-widget-avatar" src="./Именованные функциональные выражения   Учебник JavaScript_files/avatar92(1).jpg"></a>	 <a class="dsq-widget-user" href="http://disqus.com/rodionmescheryakov/">Rodion Mescheryakov</a>	 <span class="dsq-widget-comment"><p>Если коротко, то только потому, что ты ошибся с одной строке в последнем цикле: вместо <code>sum += i</code> надо написать <code>sum += arr[i]</code>. А вообще, код можно переписать гораздо короче....</p></span>	 <p class="dsq-widget-meta"><a href="http://learn.javascript.ru/array">Массивы c числовыми индексами</a>&nbsp;·&nbsp;<a href="http://learn.javascript.ru/array#comment-1593532163">15 hours ago</a></p>	 </li>	 </ul></div></div>
+ </div>
+  <div class="block block-open 
+  block-block clearfix" id="block-block-4">
+      	<a href="http://learn.javascript.ru/named-function-expression#" class="block-title"><div class="title-toggle">»</div>Поделись!</a>
+      
+   <div class="content clearfix">Помоги другим узнать о хорошей статье!
+<div style="height:120px">
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ru" data-size="large" data-count="none">Твитнуть</a>
+
+<script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s);js.id=id;  
+    js.src="//platform.twitter.com/widgets.js";  
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,"script","twitter-wjs");
+
+window.___gcfg = {lang: 'ru'};
+
+  (function() {
+    if (document.getElementById('gplus')) return;
+    var po = document.createElement('script'); po.id = 'gplus'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+</script>
+
+<div style="margin-bottom:5px" class="fb-like fb_iframe_widget" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=112959575461438&amp;font=arial&amp;href=http%3A%2F%2Flearn.javascript.ru%2Fnamed-function-expression&amp;layout=button_count&amp;locale=ru_RU&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=300"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f1cc003fa" width="300px" height="1000px" frameborder="0" allowtransparency="true" scrolling="no" title="fb:like Facebook Social Plugin" src="about:blank" style="border: none; visibility: hidden;"></iframe></span></div>
+
+<style>
+.vk-share-wrapper td { padding: 0 }
+</style>
+<div class="vk-share-wrapper">
+<script type="text/javascript" src="./Именованные функциональные выражения   Учебник JavaScript_files/share.js" charset="windows-1251"></script>
+<script>
+window.VK && document.write(VK.Share.button({
+  url: "http://learn.javascript.ru/named-function-expression",
+  title: "Именованные функциональные выражения ",
+  image: "http://learn.javascript.ru/themes/analytic/images/smart.gif",
+  noparse: true}, { type: "round", text: 'Поделиться' }));
+
+</script><table cellspacing="0" cellpadding="0" id="vkshare0" onmouseover="VK.Share.change(1, 0);" onmouseout="VK.Share.change(0, 0);" onmousedown="VK.Share.change(2, 0);" onmouseup="VK.Share.change(1, 0);" style="position: relative; width: auto; cursor: pointer; border: 0px;"><tbody><tr style="line-height: normal;"><td style="vertical-align: middle;"><a href="http://vk.com/share.php?url=http%3A%2F%2Flearn.javascript.ru%2Fnamed-function-expression" onmouseup="this._btn=event.button;this.blur();" onclick="return VK.Share.click(0, this);" style="border: none;background: #5F83AA;-webkit-border-radius: 2px 0px 0px 2px;-moz-border-radius: 2px 0px 0px 2px;border-radius: 2px 0px 0px 2px;display:block;text-decoration: none;padding: 3px 3px 3px 6px;color: #FFFFFF;font-family: tahoma, arial;height: 15px;line-height:15px;font-size: 10px;text-shadow: none;">Поделиться<div class="float:right"></div></a></td><td style="vertical-align: middle;"><a href="http://vk.com/share.php?url=http%3A%2F%2Flearn.javascript.ru%2Fnamed-function-expression" onmouseup="this._btn=event.button;this.blur();" onclick="return VK.Share.click(0, this);" style="border: none;background: #5F83AA;-webkit-border-radius: 0px 2px 2px 0px;-moz-border-radius: 0px 2px 2px 0px;border-radius: 0px 2px 2px 0px;display:block; padding: 3px;"><div style="background: url(&#39;//vk.com/images/icons/share_logo.png&#39;) 0px 0px no-repeat; background-size: 16px 31px; width: 15px;height: 15px;"></div></a></td><td style="vertical-align: middle;"><a href="http://vk.com/share.php?url=http%3A%2F%2Flearn.javascript.ru%2Fnamed-function-expression" onmouseup="this._btn=event.button;this.blur();" onclick="return VK.Share.click(0, this);" style="text-decoration: none; font-weight: bold; font-family: tahoma, arial; display: block;"><div style="background: url(&#39;//vk.com/images/icons/share_logo.png&#39;) 0px -24px no-repeat; background-size: 16px 31px; width: 4px; height: 7px;position: absolute; margin: 7px 0px 0px 4px;z-index:100;"></div><div id="vkshare_cnt0" style="border: 1px solid #bbbfc4;background: #FFFFFF;height: 15px;line-height: 15px;5px; padding: 2px 4px;min-width: 12px;margin-left: 7px;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius:2px;text-align: center; color: #666c73;font-size: 10px;z-index:99;">4</div></a></td></tr></tbody></table>
+</div>
+
+<div style="margin-top:6px">
+<g:plusone annotation="inline" width="120" size="standard" style="vertical-align:middle"></g:plusone>
+</div>
+</div></div>
+ </div>
+  </div>
+</div>
+<!-- / column-3 -->
+
+
+<script>
+applyBlockCollapse();
+</script>
+</div> 
+<!-- column wrapper -->
+
+<!-- footer -->
+ 
+  
+<!-- footer -->
+<div id="footer" class="clearfix">
+
+
+    
+    <div class="clearfix">
+
+Обновления — в твиттере: <a href="https://twitter.com/iliakan" class="twitter-follow-button" data-show-count="false" data-lang="ru">Читать @iliakan</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<style>
+.twitter-follow-button {
+vertical-align: middle;
+display: inline-block;
+}
+</style>
+
+        <div>Текст и код на этом сайте публикуются под открытой лицензией <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.ru">CC BY-NC-SA</a>.<br>
+          JavaScript™ – зарегистрированная торговая марка Oracle. Этот сайт не имеет отношения к Oracle.
+            </div>
+
+        <p><span>By Ilya Kantor</span> <a href="http://twitter.com/iliakan">Twitter</a> <a href="https://plus.google.com/100781184681750088851?rel=author">G+</a>, 2011-2013. Помогал Алексей Шистеров.</p>
+<!-- begin WebMoney Transfer : accept label -->
+<a href="http://www.megastock.ru/" target="_blank"><img src="./Именованные функциональные выражения   Учебник JavaScript_files/webmoney.png" alt="www.megastock.ru" border="0"></a>
+<img src="./Именованные функциональные выражения   Учебник JavaScript_files/visa.png">
+<img src="./Именованные функциональные выражения   Учебник JavaScript_files/mastercard.png">
+<!-- end WebMoney Transfer : accept label -->
+
+</div>
+
+</div>
+<!-- /footer -->
+
+
+<script>
+
+    var _gaq = window._gaq = [];
+    _gaq.push(["_addOrganic", "go.mail.ru","q"]);
+    _gaq.push(["_addOrganic", "nova.rambler.ru","query"]);
+    _gaq.push(["_addOrganic", "nigma.ru", "s"]);
+    _gaq.push(["_addOrganic", "blogs.yandex.ru", "text", true]);
+    _gaq.push(["_addOrganic", "webalta.ru", "q"]);
+    _gaq.push(["_addOrganic", "aport.ru", "r"]);
+    _gaq.push(["_addOrganic", "akavita.by", "z"]);
+    _gaq.push(["_addOrganic", "meta.ua", "q"]);
+    _gaq.push(["_addOrganic", "bigmir.net", "q"]);
+    _gaq.push(["_addOrganic", "tut.by", "query"]);
+    _gaq.push(["_addOrganic", "all.by", "query"]);
+    _gaq.push(["_addOrganic", "i.ua", "q"]);
+    _gaq.push(["_addOrganic", "online.ua", "q"]);
+    _gaq.push(["_addOrganic", "a.ua", "s"]);
+    _gaq.push(["_addOrganic", "ukr.net", "search_query"]);
+    _gaq.push(["_addOrganic", "search.com.ua", "q"]);
+    _gaq.push(["_addOrganic", "search.ua", "query"]);
+    _gaq.push(["_addOrganic", "poisk.ru", "text"]);
+    _gaq.push(["_addOrganic", "km.ru", "sq"]);
+    _gaq.push(["_addOrganic", "liveinternet.ru", "ask"]);
+    _gaq.push(["_addOrganic", "quintura.ru", "request"]);
+    _gaq.push(["_addOrganic", "search.qip.ru","query"]);
+    _gaq.push(["_addOrganic", "gde.ru","keywords"]);
+    _gaq.push(["_addOrganic", "search.ukr.net","search_query"]);
+    _gaq.push(["_addOrganic", "gogo.ru","q"]);
+
+    _gaq.push(['_setAccount', 'UA-2056213-16']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.src = 'http://www.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Именованные функциональные выражения   Учебник JavaScript_files/ZEbdHPQfV3x.htm" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Именованные функциональные выражения   Учебник JavaScript_files/ZEbdHPQfV3x(1).htm" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f101f09d5c" frameborder="0" allowtransparency="true" scrolling="no" src="about:blank" style="display: none;"></iframe></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "http://connect.facebook.net/ru_RU/all.js#xfbml=1&appId=112959575461438";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter17649010 = new Ya.Metrika({id:17649010,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/17649010" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+
+<script async="" src="./Именованные функциональные выражения   Учебник JavaScript_files/adsbygoogle.js"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<!-- /footer -->
+
+
+
+</div>
+
+
+
+    
+
+
+</body><iframe allowtransparency="true" src="./Именованные функциональные выражения   Учебник JavaScript_files/top.htm" frameborder="0" id="abs-top-frame" style="position: fixed; z-index: 4294967295; overflow: hidden; top: 0px; left: 0px; right: 0px; width: 138px; height: 13px; max-height: none; min-height: 0px; margin: 0px auto; padding: 0px; border: 0px; display: block; background-color: transparent;"></iframe></html>

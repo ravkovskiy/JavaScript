@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta charset='utf-8'>
+</head>
+<body>
+<script>
+var ktoPrishol=prompt('Кто пришёл?','Админ');
+if(ktoPrishol==null){alert('Вход отменён')}
+else if(ktoPrishol=='Админ'){
+	var admin=prompt('Пароль?','********');
+	if(admin=='Черный Властелин'){alert('Добро пожаловать!')}
+		else if(admin==null){alert('Вход отменён')}
+			else{alert('Пароль неверен')}
+}
+else {alert('Я вас не знаю')}
+	</script>
+</body>
+</html>

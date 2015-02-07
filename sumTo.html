@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset='utf-8'>
+</head>
+<body>
+<script>
+function sumTo(n) {
+	var x=0;
+	for(var i=1;i<=n;i++) {
+		x=x+i;
+	}
+	return x;
+}
+function sumTo2(n) {
+	return (n>1)? (n+sumTo(n-1)):n;
+}
+for(;;) {
+var n=+prompt('vvedite n','3');
+for(;(n<=0||(n^0)!=n);) { n=+prompt('celoe n','100');
+}
+alert('n1='+sumTo(n));
+alert('n2='+sumTo2(n));
+alert('n3='+(n+n*n)/2);
+}
+</script>
+</body>
+</html>

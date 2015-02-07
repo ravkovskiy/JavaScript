@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://ru.lookatcode.com/files/iframe-resize.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <script>
+    window.onmessage = function(e) {
+      e = e || event; // IE
+      var name = e.data;
+      if (!e.origin.match(/javascript\.ru$/)) return;
+
+      var doc = parent.frames[name].document;
+
+    // not ok when document has floating element which falls out of body
+      var height = doc.documentElement.scrollHeight;
+
+      parent.postMessage(JSON.stringify({name:name, cmd:"resize-iframe", height:height}), e.origin);
+    }
+  </script>
+</head>
+<body>
+
+</body></html>

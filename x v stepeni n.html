@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta charset='utf-8'>
+</head>
+<body>
+<script>
+function pow(x, n) {
+	var x1=x;
+for(var y=2;y<=n;y++) {
+	x=x*x1;
+}
+return x;
+}
+for(;;) {
+var x=+prompt('x','2');
+var n=+prompt('n','2');
+if(x===0) break;
+for(;n!=(n^0)||n<0;) {
+n=prompt('vvedite cely n','2');
+}
+alert(pow(x, n));
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+<meta charset='utf-8'>
+</head>
+<body>
+<script>
+function checkAge(age) {
+	return (age>=18)?true:confirm('roditeli');
+}
+function checkAge1(age) {
+	return (age>=18)||confirm('roditeli?');
+}
+var age=prompt('skolko let?');
+checkAge(age);
+checkAge1(age);
+</script>
+</body>
+</html>
