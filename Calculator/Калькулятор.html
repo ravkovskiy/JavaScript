@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Объединение ячеек</title>
+  <style type="text/css">
+     table {height: 400px; margin-top: 7%; margin-left: 25%}
+     .bg {height: 15px; border: none;}
+     .scr {height: 100px; border: 1px solid #8e8e8e; padding: 0}
+     .but {text-align: center; vertical-align: center; font-size: 24px; font-weight: 600;}
+     .scr input {text-align: right; width: 100%; height: 100%; font-size: 80px; background-color: #eee; border: none;}
+     .but input {width: 100%; height: 100%; font-size: 40px;}
+     #umn {padding-top: 6px}
+     #umn, #operation {background-color: #ace; padding: 0px}
+     .but input:hover, #umn:hover, #operation:hover {background-color: #eff}
+     .scr input:focus {background-color: #efb}
+  </style>
+ </head>
+ <body>
+  <table cellpadding="2" cellspacing="0" bgcolor="#cccddf" width="600px">
+   <tr class="bg"><td colspan="11"></td></tr>
+
+   <!--Экран--> <tr class="bg"><td></td><td colspan="9"  class="scr"><input name="screen" value="0" size="40"></td><td></td></tr>
+
+   <tr class="bg"><td colspan="11"></td></tr>
+
+   <!--Кнопки С = - +-->  <tr class="bg"><td></td><td class="but"><input type="button" name="clear" value="C"></td><td colspan="3" class="but"><input type="button" name="finish" value="="></td><td colspan="2"></td><td class="but"><input type="button" name="minus" value="-" id="operation"></td><td></td><td class="but"><input type="button" name="plus" value="+" id="operation"></td> <td></td></tr>
+
+   <!--Кнопки * /--><tr class="bg"><td colspan="7"></td><td class="but"><input type="button" name="umnoz" value="*" id="umn"></td><td></td><td class="but"><input type="button" name="delit" value="/" id="operation"></td><td></td></tr>
+
+   <!--Кнопки 1-5--><tr class="bg"><td></td><td class="but"><input type="button" name="one" value="1"></td><td></td><td class="but"><input type="button" name="two" value="2"></td><td></td><td class="but"><input type="button" name="three" value="3"></td><td></td><td class="but"><input type="button" name="four" value="4"></td><td></td><td class="but"><input type="button" name="five" value="5"></td><td></td></tr>
+
+   <tr class="bg"><td colspan="11"></td></tr>
+
+   <!--Кнопки 6-0--><tr class="bg"><td></td><td class="but"><input type="button" name="six" value="6"></td><td></td><td class="but"><input type="button" name="seven" value="7"></td><td></td><td class="but"><input type="button" name="eight" value="8"></td><td></td><td class="but"><input type="button" name="nine" value="9"></td><td></td><td class="but"><input type="button" name="zero" value="0"></td><td></td></tr>
+
+   <tr class="bg"><td colspan="11"></td></tr>
+  </table>
+ </body>
+</html>
