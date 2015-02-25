@@ -10,9 +10,8 @@
      .but {text-align: center; vertical-align: center; font-size: 24px; font-weight: 600;}
      .scr input {text-align: right; width: 100%; height: 100%; font-size: 80px; background-color: #eee; border: none;}
      .but input {width: 100%; height: 100%; font-size: 40px;}
-     #umn {padding-top: 6px}
-     #umn, #operation {background-color: #ace; padding: 0px}
-     .but input:hover, #umn:hover, #operation:hover {background-color: #eff}
+     .operation {background-color: #ace; padding: 0px}
+     .but input:hover, .operation:hover {background-color: #eff}
      .scr input:focus {background-color: #efb}
   </style>
  </head>
@@ -24,9 +23,9 @@
 
    <tr class="bg"><td colspan="11"></td></tr>
 
-   <!--Кнопки С = - +-->  <tr class="bg"><td></td><td class="but"><input type="button" name="clear" value="C"></td><td colspan="3" class="but"><input type="button" name="finish" value="="></td><td colspan="2"></td><td class="but"><input type="button" name="minus" value="-" id="operation"></td><td></td><td class="but"><input type="button" name="plus" value="+" id="operation"></td> <td></td></tr>
+   <!--Кнопки С = - +-->  <tr class="bg"><td></td><td class="but"><input type="button" name="clear" value="C"></td><td colspan="3" class="but"><input type="button" name="finish" value="="></td><td colspan="2"></td><td class="but"><input type="button" name="minus" value="-" class="operation"></td><td></td><td class="but"><input type="button" name="plus" value="+" class="operation"></td> <td></td></tr>
 
-   <!--Кнопки * /--><tr class="bg"><td colspan="7"></td><td class="but"><input type="button" name="umnoz" value="*" id="umn"></td><td></td><td class="but"><input type="button" name="delit" value="/" id="operation"></td><td></td></tr>
+   <!--Кнопки * /--><tr class="bg"><td colspan="7"></td><td class="but"><input type="button" name="umnoz" value="∙" class="operation"></td><td></td><td class="but"><input type="button" name="delit" value="/" class="operation"></td><td></td></tr>
 
    <!--Кнопки 1-5--><tr class="bg"><td></td><td class="but"><input type="button" name="one" value="1"></td><td></td><td class="but"><input type="button" name="two" value="2"></td><td></td><td class="but"><input type="button" name="three" value="3"></td><td></td><td class="but"><input type="button" name="four" value="4"></td><td></td><td class="but"><input type="button" name="five" value="5"></td><td></td></tr>
 
