@@ -1,110 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="utf-8">
-  <style>
-  body {position: absolute; left: 350px; top:300px;}
-    div {width:475px; height:150px; background-color: #f0f0f0; border-radius: 15px; border:#e0e0e0 solid 1px; }
-    div span {width: 25px; height:40px; background-color:#e0e0e0;border-radius:15px; position: absolute; text-align: center; padding-top: 4px; font-family: fantasy; font-size: 30px; color: #bae; cursor: pointer;}
-    div span:hover {background-color: #aaa; color: #666}
-    li {display: none;}
-    .screen {position: absolute; display: inline; top: -150px;}
-    .butOf {color:#eee;}
-    .butOf:hover {color:#eee; background-color: #e0e0e0}
-  </style>
+<meta charset="utf-8">
+<style> 
+  #field { 
+    width: 200px;
+    height: 150px;
+    border: 10px groove black;
+    background-color: #00FF00;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+</style>
 </head>
-<body>
-  <div><span><</span><span>></span>
-  </div>
-<ul id="images">
-  <li><img src="1.png"></li>
-  <li><img src="2.png"></li>
-  <li><img src="3.png"></li>
-  <li><img src="4.png"></li>
-  <li><img src="5.png"></li>
-  <li><img src="6.png"></li>
-  <li><img src="7.png"></li>
-  <li><img src="8.png"></li>
-  <li><img src="9.png"></li>
-  <li><img src="10.png"></li>
-</ul>
+<body style="height:2000px">
+Кликните на любое место поля, чтобы мяч перелетел туда.<br>
+Мяч никогда не вылетит за границы поля.
+<div id="field">
+<img src="ball.gif" id="ball">
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+</div>
 <script>
-var lis = document.getElementsByTagName('li');
-for(var i=0; i<lis.length; i++) {
-  lis[i].style.position='relative';
-  var span = document.createElement('span');
-  span.style.cssText='position:absolute;left:0;top:-100px';
-  span.innerHTML = i+1;
-  lis[i].appendChild(span);}
-  var span1=document.getElementsByTagName('div')[0].children[0];
-  var span2=document.getElementsByTagName('div')[0].children[1];
-  span1.style.top='60px';
-  span1.style.left='10px';
-  span2.style.top='60px';
-  span2.style.left='440px';
-  var mas=new Array(3);
-  mas[0]=lis[0];
-  mas[1]=lis[1];
-  mas[2]=lis[2];
-  for(var i=0; i<mas.length; i++) {
-    mas[i].className='screen';
-  }
-  var n=0;
-  span1.onclick=function(){
-    for(var i=0; i<mas.length; i++) {
-    mas[i].className='';
-  }
-    if(n-3>=0) {
-      mas[0]=lis[n-3];
-      mas[1]=lis[n-2];
-      mas[2]=lis[n-1];
-      n=n-3;
-    }
-    else if(n-2>=0) {
-      mas[0]=lis[n-2];
-      mas[1]=lis[n-1];
-      mas[2]=lis[n];
-      n=n-2;
-    }
-    else if(n-1>=0) {
-      mas[0]=lis[n-1];
-      mas[1]=lis[n];
-      mas[2]=lis[n+1];
-      n=n-1;
-    }
-    else {span1.className='butOf'}
-    for(var i=0; i<mas.length; i++) {
-    mas[i].className='screen';
-  }
-  span2.className='';
-  }
-  span2.onclick=function(){
-    for(var i=0; i<mas.length; i++) {
-    mas[i].className='';
-  }
-    if(n+5<=9) {
-      mas[2]=lis[n+5];
-      mas[1]=lis[n+4];
-      mas[0]=lis[n+3];
-      n=n+3;
-    }
-    else if(n+4<=9) {
-      mas[2]=lis[n+4];
-      mas[1]=lis[n+3];
-      mas[0]=lis[n+2];
-      n=n+2;
-    }
-    else if(n+3<=9) {
-      mas[2]=lis[n+3];
-      mas[1]=lis[n+2];
-      mas[0]=lis[n+1];
-      n=n+1;
-    }
-    else {span2.className='butOf'}
-    for(var i=0; i<mas.length; i++) {
-    mas[i].className='screen';
-  }
-  span1.className='';
-  }
+var ball=document.getElementById('ball');
+var div=document.getElementById('field');
+  var coords=div.getBoundingClientRect();
+div.onclick=function(event){
+  ball.style.top=event.clientY-div.offsetTop-div.clientTop+div.scrollTop+'px';
+  ball.style.left=event.clientX-div.offsetLeft-div.clientLeft+'px';
+}
 </script>
 </body>
 </html>
