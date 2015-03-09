@@ -1,7 +1,8 @@
 table {
 	height: 400px; 
 	margin-top: 7%; 
-	margin-left: 25%
+	margin-left: 25%;
+	border-radius: 7px;
 }
 
 .bg {
@@ -18,7 +19,7 @@ table {
 .but {
 	text-align: center; 
 	vertical-align: center; 
-	font-size: 24px; 
+	font-size: 22px; 
 	font-weight: 600;
 }
 
@@ -43,7 +44,8 @@ table {
 }
 
 #umn {
-	padding-top: 6px
+	padding-top: 6px;
+	height: 49px;
 }
 
 .but input:hover, #umn:hover, #operation:hover {

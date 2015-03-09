@@ -1,30 +1,71 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML>
 <html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Объединение ячеек</title>
-  <style type="text/css">
-  body {padding-top: 200px; padding-left: 350px}
-  td.bg {height: 8px; border: 0; background-color: red}
-  td.scr {height: 40px}
-  td.but {height: 20px}
+<head>
+  <meta charset="utf-8">
+  <style>
+    .selected {
+      background: #0f0;
+    }
+    li {
+      cursor: pointer;
+    }
   </style>
- </head>
- <body>
-  <table border="1" cellpadding="2" cellspacing="0" bgcolor="#ffdada" width="400px" height="352px">
-   <tr class="bg"><td colspan="15"></td></tr>
-   <tr class="scr"><td></td><td colspan="13"></td><td></td></tr>
-   <tr class="bg"><td colspan="15"></td></tr>
-   <tr class="but"><td colspan="6"></td><td colspan="3">=</td><td></td><td>-</td><td></td><td>+</td><td colspan="2"></td></tr>
-   <tr class="but"><td colspan="10"></td><td>*</td><td></td><td>/</td><td colspan="2"></td></tr>
-   <tr class="but"><td></td><td>1</td><td></td><td>2</td>
-   <td></td><td>3</td><td></td><td>4</td>
-   <td></td><td>5</td><td colspan="6"></td></tr>
-   <tr class="bg"><td colspan="15"></td></tr>
-   <tr class="but"><td></td><td>6</td><td></td><td>7</td>
-   <td></td><td>8</td><td></td><td>9</td>
-   <td></td><td>0</td><td colspan="6"></td></tr>
-   <tr class="bg"><td colspan="15"></td></tr>
-  </table>
- </body>
+</head>
+<body>
+
+Клик на элементе выделяет только его.<br>
+Ctrl(Cmd)+Клик добавляет/убирает элемент из выделенных.<br>
+Shift+Клик добавляет промежуток от последнего кликнутого к выделению.<br>
+
+<ul>
+<li>Кристофер Робин</li>
+<li>Винни-Пух</li>
+<li>Ослик Иа</li>
+<li>Мудрая Сова</li>
+<li>Кролик. Просто кролик.</li>
+</ul>
+
+<script>
+	var ul=document.getElementsByTagName('ul')[0];
+	var previous;
+	var li=document.getElementsByTagName('li');
+	var arrLi=[];
+
+	for(var i=0; i<li.length; i++) {
+		arrLi[i]=li[i];
+	}
+
+	ul.onclick=function(event) {
+		var target=event.target;
+		if(target.tagName=='LI') {
+			//Обработка ctrl:
+			if(event.ctrlKey) {target.className=(target.className=='') ? 'selected' : ''; previous=target;}
+
+			else if(event.shiftKey) {
+				for(i=0; i<arrLi.length; i++) {
+					if(previous===arrLi[i]) var prev=i;
+					if(target===arrLi[i]) var next=i;
+				}
+				if(prev>=next) for(i=next; i<=prev; i++) {arrLi[i].className='selected'}
+				else for(i=prev; i<=next; i++) {arrLi[i].className='selected'};
+				previous=target;
+				return false;
+			}
+
+			else {
+				for(i=0; i<arrLi.length; i++) {
+					if(target==arrLi[i]) next=i;
+				}
+				for(i=0; i<arrLi.length; i++) {
+					if(i!=next) arrLi[i].className='';
+				}
+				arrLi[next].className='selected';
+				previous=target;
+			}
+
+		}
+
+	}
+</script>
+</body>
 </html>
