@@ -1,42 +1,28 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<meta charset="utf-8">
-<style> 
-  #field { 
-    width: 200px;
-    height: 150px;
-    border: 10px groove black;
-    background-color: #00FF00;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  #ball {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -20px;
-    margin-top: -20px;
-  }
-</style>
+  <title>Селект</title>
+  <meta charset='utf-8'>
+  <script src='http://code.jquery.com/jquery-latest.js'></script>
+  <style type="text/css">
+ 	div {border: 2px solid green}
+ 	span {border: 1px solid red}
+  </style>
 </head>
-<body style="height:2000px">
-Кликните на любое место поля, чтобы мяч перелетел туда.<br>
-Мяч никогда не вылетит за границы поля.
-<div id="field">
-<img src="ball.gif" id="ball">
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-</div>
+<body>
+<div><b>Перечень услуг выполняемых администрацией</b></div>
+<span>1. Решение вопросов личного характера</span>
 <script>
-var ball=document.getElementById('ball');
-var div=document.getElementById('field');
-  var coords=div.getBoundingClientRect();
-div.onclick=function(event){
-  ball.style.top=event.clientY-div.offsetTop-div.clientTop+div.scrollTop+'px';
-  ball.style.left=event.clientX-div.offsetLeft-div.clientLeft+'px';
-}
+ var x=0;
+ 
+ $('div').on('click','b', function() {alert('Клик на див');
+ 		
+ 		if(x==1) {$(document).off('click','span', onClickDocument)}
+ 		else {$(document).on('click','span', onClickDocument)};
+
+ 		function onClickDocument() {alert('Клик на документ'); x=x==0 ? 1:0;}
+ 		
+	});
 </script>
 </body>
 </html>
