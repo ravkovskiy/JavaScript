@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Селект</title>
+  <meta charset='utf-8'>
+  <style type="text/css">
+  li {cursor: pointer;}
+  	.selected {background-color: #3f3}
+  </style>
+</head>
+<body>
+<ul class="heroes" id="heroes">
+	<li>Кристофер Робин</li>
+	<li>Винни-Пух</li>
+	<li>Ослик Иа</li>
+	<li>Мудрая Сова</li>
+	<li>Кролик. Просто кролик</li>
+</ul>
+<input type="button" class="getHeroes" onclick="listSelect.getSelected()" value='listSelect.getSelected()'>
+
+<script type="text/javascript">
+var listSelect=new ListSelect({elem:document.querySelector('#heroes')});
+
+function ListSelect(options) {
+	var elem=options.elem;
+	var list=elem.getElementsByTagName('li');
+	var previousElem=0;
+	
+	elem.onclick=function(e) {
+		if(e.target.tagName=='LI') {
+			if(!e.ctrlKey&&!e.shiftKey) {toggle(e.target)}
+			else if(!e.ctrlKey) {shift(e.target)}
+			else {ctrl(e.target)}
+		}
+	
+	}
+	document.onmousedown=function() {return false};
+
+	function toggle(target) {
+		var x=0, targetIndex=0, selected;
+		for(var i=0; i<list.length; i++) {
+			if(list[i].classList.contains('selected')) x++;
+			if(target==list[i]) {targetIndex=i;
+				if(target.classList.contains('selected')) selected=true;
+			}
+		};
+		for(var i=0; i<list.length; i++) {
+			list[i].classList.remove('selected');
+		};
+		if(x>1) {list[targetIndex].classList.add('selected');
+		previousElem=targetIndex}
+		else if(!selected) {list[targetIndex].classList.add('selected');
+		previousElem=targetIndex}
+	    else {previousElem=0}
+	}
+
+	function shift(target) {
+		var p=previousElem, targetIndex=0;
+		for(var i=0; i<list.length; i++) {
+			if(list[i]==target) {targetIndex=i};
+		};
+		if(p>targetIndex) {
+			p=targetIndex;
+			targetIndex=previousElem;
+		}
+		for( ; p<=targetIndex; p++) {
+			if(!list[p].classList.contains('selected')) list[p].classList.add('selected');
+		}
+	}
+	function ctrl(target) {
+		if(!target.classList.contains('selected')) {target.classList.add('selected');
+			for(var i=0; i< list.length; i++) {
+				if(target==list[i]) previousElem=i;
+			}
+		}
+		else {target.classList.remove('selected'); previousElem=0}
+	}
+	this.getSelected=function() {
+		var mas=[];
+		for(var i=0; i<list.length; i++) {
+			if(list[i].classList.contains('selected')) {mas.push(list[i].innerHTML)}
+		}
+	alert(mas);
+	}
+}
+	
+</script>
+
+</table>
+</body>
+</html>
