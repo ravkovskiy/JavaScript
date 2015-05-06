@@ -1,6 +1,8 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
+
 <head>
+<<<<<<< f1510bf456300dab1cefe8e8709da810b9657093
   <title>Селект</title>
   <meta charset='utf-8'>
   <script src='http://code.jquery.com/jquery-latest.js'></script>
@@ -25,4 +27,33 @@
 	});
 </script>
 </body>
+=======
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <script>
+  function Hamster() {this._food = [];}
+
+
+
+Hamster.prototype.found = function(something) {
+  this._food.push(something);
+};
+
+// Создаём двух хомяков и кормим первого
+speedy = new Hamster();
+lazy = new Hamster();
+
+speedy.found("яблоко");
+speedy.found("орех");
+
+alert( speedy._food.length ); // 2
+alert( lazy._food.length ); // 2 (!??)
+  </script>
+
+</body>
+
+>>>>>>> 19eed91b6606fbf0cac94a65df3eff6a1bc5b9d2
 </html>
