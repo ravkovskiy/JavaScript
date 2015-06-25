@@ -1,0 +1,59 @@
+<authors>
+    <author id="1">
+        <fio>
+            <f>Пушкин</f>
+            <i>Александр</i>
+            <o>Сергеевич</o>
+        </fio>
+        <born>1799</born>
+    </author> 
+    <author id="2">
+        <fio>
+            <f>Лермонтов</f>
+            <i>Михаил</i>
+            <o>Юрьевич</o>
+   
+        </fio>
+        <born>1814</born>
+    </author> 
+    <author id="3">
+        <fio>
+            <f>Фет</f>
+            <i>Александр</i>
+            <o>Сергеевич</o>
+           
+        </fio>
+        <born>1814</born>
+    </author> 
+    <author id="4">
+        <fio>
+            <f>Хармс</f>
+            <i>Даниил</i>
+        </fio>
+        <born>1905</born>
+    </author>
+    <author id="1893">
+        <fio>
+            <f>Маяковский</f>
+            <i>Владимир</i>
+            <o>Владимирович</o>
+        </fio>
+        <born>1893</born>
+    </author> 
+    <author id="1940">
+        <fio>
+            <f>Пригов</f>
+            <i>Дмитрий</i>
+            <o>Александрович</o>
+        </fio>
+        <born>1940</born>
+    </author> 
+    <author id="1703">
+        <fio>
+            <f>Кантемир</f>
+            <i>Антиох</i>
+            <o>Дмитриевич</o>
+        </fio>
+        <born>1744</born>
+    </author> 
+</authors>

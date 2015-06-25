@@ -1,0 +1,21 @@
+<author id="1">
+    <name>
+        <fio>
+            <f>Пушкин</f>
+            <i>Александр</i>
+            <o>Сергеевич</o>
+        </fio>
+        <nickname>
+            Обезъяна
+        </nickname>
+    </name>
+    <born>1799</born>
+    <rip>1837</rip>
+    <registry country="Россия" city="Москва" />
+    <text>
+        Александр Сергеевич <b>Пушкин</b>  - наше все!
+    </text>
+    <text>
+        Пушкин разбудил <a href="http://en.wikipedia.org/wiki/Lermontov">Лермонтова</a>
+    </text>
+</author>
