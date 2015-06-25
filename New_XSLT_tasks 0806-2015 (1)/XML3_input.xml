@@ -1,0 +1,114 @@
+<scores>
+	<cricketbbbfeed>
+		<creator>
+			<author>Cricket Archive Scorecard Feed</author>
+			<version>V1.03</version>
+			<date>21-3-2007</date>
+		</creator>
+		<matchdetail>
+			<livescorecard>http://cricketarchive.com/Archive/Scorecards/86/86112/86112.html</livescorecard>
+			<type>ODI</type>
+			<series>ICC World Cup 2006/07</series>
+			<sequence>Group B</sequence>
+			<matchdates>21st March 2007 (50-over match)</matchdates>
+			<team1>Bangladesh</team1>
+			<team2>Sri Lanka</team2>
+			<groundname>Queen's Park Oval, Port of Spain,
+	Trinidad</groundname>
+			<totalinnings>2</totalinnings>
+			<ballsperover>6</ballsperover>
+			<toss>
+				<winner>Bangladesh</winner>
+				<decision>field</decision>
+			</toss>
+			<result>Sri Lanka won by a concession (
+				<a href="/Miscellaneous/Rain_Rule_Methods.html#dl">Duckworth/Lewis method</a>)</result>
+			<matchawards>
+				<award>
+					<awardname>Man of the Match</awardname>
+					<player>ST Jayasuriya</player>
+				</award>
+			</matchawards>
+		</matchdetail>
+		<currentscores>
+			<innings>2</innings>
+			<batteamname>Bangladesh</batteamname>
+			<bowlteamname>Sri Lanka</bowlteamname>
+			<batteamruns>112</batteamruns>
+			<batteamwickets>10</batteamwickets>
+			<batteamovers>36.6</batteamovers>
+			<maxovers>46</maxovers>
+			<target>311</target>
+			<runrates>
+				<currentrunrate>3.03</currentrunrate>
+				<requiredrunrate></requiredrunrate>
+			</runrates>
+			<striker>
+				<name>Mohammad Ashraful</name>
+				<runs>45</runs>
+				<balls>63</balls>
+				<fours>6</fours>
+				<sixes>0</sixes>
+			</striker>
+			<nonstriker>
+				<name>Syed Rasel</name>
+				<runs>0</runs>
+				<balls>1</balls>
+				<fours>0</fours>
+				<sixes>0</sixes>
+			</nonstriker>
+			<bowler>
+				<name>M Muralitharan</name>
+				<overs>9</overs>
+				<maidens>0</maidens>
+				<runs>15</runs>
+				<wickets>1</wickets>
+				<wides>2</wides>
+				<noballs>0</noballs>
+			</bowler>
+			<nonbowler>
+				<name>SL Malinga</name>
+				<overs>6</overs>
+				<maidens>0</maidens>
+				<runs>27</runs>
+				<wickets>3</wickets>
+				<wides>1</wides>
+				<noballs>0</noballs>
+			</nonbowler>
+			<currentpartnership>
+				<runs></runs>
+				<overs></overs>
+				<batsman1>
+					<name></name>
+					<runs></runs>
+					<balls></balls>
+				</batsman1>
+				<batsman2>
+					<name></name>
+					<runs></runs>
+					<balls></balls>
+				</batsman2>
+			</currentpartnership>
+		</currentscores>		
+	</cricketbbbfeed>
+	<inningsinfo>
+		<match>
+			<match_detail>
+				<time>Thursday 22nd of March 2007 03:02:01 IST</time>
+				<Result>Sri Lanka won by a concession (dl)</Result>
+			</match_detail>
+			<innings>
+				<batting>
+					<teamname>Sri Lanka innings</teamname>
+				</batting>
+				<total>Total (4 wickets, 50 overs)	310</total>
+			</innings>
+			<innings>
+				<batting>
+					<teamname>Bangladesh innings</teamname>
+				</batting>
+				<total>Total (10 wickets, 36.6 overs) 112</total>
+			</innings>
+		</match>
+	</inningsinfo>
+</scores>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HTMLPost>
+	<HTMLPostParam name="HTTP_REQUEST_TYPE">POST</HTMLPostParam>
+	<HTMLPostParam name="HTTP_HOST_URL">http://www.airberlin.com/site/abvakanz_c.php?LANG=eng</HTMLPostParam>
+	<HTMLPostParam headerName="Content-Type" headerValue="application/x-www-form-urlencoded" name="HTTP_REQUEST_HEADER"></HTMLPostParam>
+	<HTMLPostParam name="MONAT">02</HTMLPostParam>
+	<HTMLPostParam name="JAHR">07</HTMLPostParam>
+	<HTMLPostParam name="MONAT2">03</HTMLPostParam>
+	<HTMLPostParam name="JAHR2">07</HTMLPostParam>
+	<HTMLPostParam name="woher">startseite</HTMLPostParam>
+	<HTMLPostParam name="ref2">zanox@4856716C1861480077S333@130</HTMLPostParam>
+	<HTMLPostParam name="VON">BCN</HTMLPostParam>
+	<HTMLPostParam name="LV3">BCN</HTMLPostParam>
+	<HTMLPostParam name="TAG">07</HTMLPostParam>
+	<HTMLPostParam name="DV">022007</HTMLPostParam>
+	<HTMLPostParam name="NACH">STN</HTMLPostParam>
+	<HTMLPostParam name="LN3">STN</HTMLPostParam>
+	<HTMLPostParam name="TAG2">14</HTMLPostParam>
+	<HTMLPostParam name="DN">032007</HTMLPostParam>
+	<HTMLPostParam name="WAEHRUNG">EUR</HTMLPostParam>
+	<HTMLPostParam cookieName="LangPref" cookieValue="eng%A7%A7%A71169460246" domain="www.airberlin.com" name="COOKIE" path="/"></HTMLPostParam>
+</HTMLPost>

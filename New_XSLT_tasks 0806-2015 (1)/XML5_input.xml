@@ -1,0 +1,193 @@
+﻿<FAB_AccomAvailRS>
+	<AccommodationSearchResponse Success="true" ModifiedRequest="false">
+		<ViewInfo Offset="0" Length="17"/>
+		<ResultSetInfo SortCode="cost" SortAscending="true" MaxItems="100" NumItems="17"/>
+		<Accommodations>
+			<AccommodationSegment AccommodationCode="11236" AccommodationId="13610" AccommodationName="Generator, Berlin" NormalisedName="GENERATOR, BERLIN" BoardCode="BB" ClassCode="1*" Supplier="JAC" BasicAdultCost="147.6" Currency="EUR" Availability="available" Type="Unknown" Bookable="true">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Storkower Strasse 160" CityOrTown="Berlin" PostCode="10407" Country="DE"/>
+				<Description>The Generator hostel is a fantastic place to stay for anybody wishing to explore Berlin. Although not centrally located, the area is in an up and coming district in former East Berlin and less then 10 minutes by tram to Alexanderplatz. Offering excellent value for money, guests will be impressed by the size of the rooms, modern decoration and warm welcome. The Generator bar is the ideal place to relax at the end of a long day of sightseeing or having a few drinks before a night out on the town. The hotel has a lounge area, The Turbine, disabled access and a business centre.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Twin Room" Code="21081" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+					<AccommodationUnit Name="Double Room" Code="21082" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+					<AccommodationUnit Name="Triple Room" Code="21084" NumRooms="1" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="4"/>
+					<AccommodationUnit Name="Quad Room" Code="21085" NumRooms="1" MaxOccupancy="4" MinOccupancy="4" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="5"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/fngkavlm/jsthkiud.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/fngkavlm/jsthkiud_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/fngkavlm/fmtmclgh.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/fngkavlm/fmtmclgh_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="7490" AccommodationId="7934" AccommodationName="Panorama Hotel" NormalisedName="PANORAMA" BoardCode="BB" ClassCode="3*" Supplier="JAC" BasicAdultCost="157.5" Currency="EUR" Availability="available" Type="Hotel" Bookable="true">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Lewishamstrasse 1" CityOrTown="Berlin" PostCode="10629" Country="DE"/>
+				<Description>Located directly on the Adenauerplatz, the Panorama offers the perfect location for exploring the world-renowned Kurfuerstendamm, the Gedaechtnis Kirche and most of Berlin''s major sights, Whether it''s culture, shopping or simply taking in the atmosphere, the Panorama''s location is ideal for your stay in Germany''s new capital. Enjoy a relaxing Weissbier in the hotel''s cosy bar before setting off to savour the city''s culinary delights and exciting nightlife.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Single Room" Code="5305" NumRooms="1" MaxOccupancy="1" MinOccupancy="1" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="1"/>
+					<AccommodationUnit Name="Double Room" Code="5307" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+					<AccommodationUnit Name="Triple Room" Code="5309" NumRooms="1" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="4"/>
+					<AccommodationUnit Name="Twin Room" Code="5421" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/birrfksg/netigfvs.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/birrfksg/netigfvs_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/birrfksg/mewldcwj.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/birrfksg/mewldcwj_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="9607" AccommodationId="8480" AccommodationName="Ambassador Hotel Berlin" NormalisedName="AMBASSADOR BERLIN" BoardCode="BB" ClassCode="3*" Supplier="JAC" BasicAdultCost="226.2" Currency="EUR" Availability="available" Type="Hotel" Bookable="false">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Bayreuther Strasse 42-43" CityOrTown="Berlin" PostCode="10787" Country="DE"/>
+				<Description>Only a few steps from the famous Ka-De-We department store, Berlin Zoo and the Ku-Damm, the Ambassador Hotel is located in a peaceful side street, yet still in the heart of the the western part of Berlin. 199 rooms are equipped with hairdryer, minibar, direct-dial telephone, cable TV, pay TV, radio and PC plug. In fact, the array of facilities and location make this hotel a suitable option for both leisure and business travellers. Although the hotel does not currently have its own restaurant, visitors will find a suitable and comprehensive choice of eating houses all within walking distance of the hotel. The Ambassador Bar is open for a quick beer or a long cocktail.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Double Room" Code="14194" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+					<AccommodationUnit Name="Twin Room" Code="14195" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+					<AccommodationUnit Name="Single Room" Code="14196" NumRooms="1" MaxOccupancy="1" MinOccupancy="1" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="1"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/wqnfpnrx/xymjlnrj.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/wqnfpnrx/xymjlnrj_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/wqnfpnrx/btkpxvgh.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/wqnfpnrx/btkpxvgh_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/wqnfpnrx/gwsppodd.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/wqnfpnrx/gwsppodd_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="7278" AccommodationId="7278" AccommodationName="Quality&amp;Suites Wilhelmsberg" NormalisedName="QUALITY&amp;SUITES WILHELMSBERG" MaxChildAge="12" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="4*" OfficialRating="4*" Supplier="BAR" BasicAdultCost="230.4" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="true">
+				<Address Address1="CL  LANDSBERGER ALLEE 203" CityOrTown="BERLIN" PostCode="13055"/>
+				<Description>The Quality Hotel and Suites is a deluxe hotel, located 13 Kilometers from Tegel Airport. Situated in the Northeastern sector of central Berlin, this hotel is near Alexanderplatz and the historic city center. The clean and comfortable guest rooms are attractive and spacious. These rooms have a contemporary dйcor and they are equipped with all modern amenities. A train station is 100 meters away from the hotel, offering service directly into the city. The Quality Hotel and Suites is minutes to fine dining, shopping and entertainment venues</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/1105/room-t.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/1105/exterior-t.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="9197" AccommodationId="8283" AccommodationName="Savigny" NormalisedName="SAVIGNY" BoardCode="BB" ClassCode="3*" Supplier="JAC" BasicAdultCost="237.0" Currency="EUR" Availability="available" Type="Unknown" Bookable="true">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Brandenburgische Strasse" CityOrTown="Berlin" PostCode="10707" Country="DE"/>
+				<Description>A privately owned hotel exuding hospitality and tradition in the heart of the German capital, the 3-star Savigny offers personal service and individual attention. Just 5 minutes walk from Berlins renowned Ku-damm, visitors to this cosmopolitan city will find art, culture, history, restaurants, theatres and of course shopping, practically on their doorstep. Simply furnished guestrooms all offer bath/shower with WC, minibars, telephone, radio, TV and hairdryers. A hearty buffet breakfast is served in bright and welcoming surroundings and in the evening guests can also enjoy a quite drink in the pleasant hotel bar.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Double Room" Code="12387" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+					<AccommodationUnit Name="Single Room" Code="12389" NumRooms="1" MaxOccupancy="1" MinOccupancy="1" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="1"/>
+					<AccommodationUnit Name="Twin Room" Code="12388" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+					<AccommodationUnit Name="Triple Room" Code="12390" NumRooms="1" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="4"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/ddwdzada/flpsiifl.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/ddwdzada/flpsiifl_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/ddwdzada/gdnybznh.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/ddwdzada/gdnybznh_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="7489" AccommodationId="7933" AccommodationName="Meineke Arte Hotel" NormalisedName="MEINEKE ARTE" BoardCode="BB" ClassCode="3*" Supplier="JAC" BasicAdultCost="241.17" Currency="EUR" Availability="available" Type="Hotel" Bookable="false">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Meinekestrasse 10" CityOrTown="Berlin" PostCode="10719" Country="DE"/>
+				<Description>Enjoying a quiet, yet central, location, the Meineke Arte offers ideal acces to the world-famous Kurfuerstendamm; with department stores, boutiques, restaurants, theatres and galleries all lying within a few minutes'' walking distance. The hotel is conveniently situated in a quiet side-street just a stone''s throw from the Gedachtnis Kirche with many of the 60 rooms overlooking a calm inner courtyard. Accommodation at this turn-of-the-century 3-star property offers large rooms, TV, direct dial telephones and guests can benefit also from the hotels parking facilities. The cosy bar is the ideal spot for a quick Weissbier before enjoying a traditional Berlin dinner at the neighbouring Meineke 10 Restaurant.
+</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Single Room" Code="5302" NumRooms="1" MaxOccupancy="1" MinOccupancy="1" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="1"/>
+					<AccommodationUnit Name="Twin Room" Code="5303" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+					<AccommodationUnit Name="Triple Room" Code="5304" NumRooms="1" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="4"/>
+					<AccommodationUnit Name="Double Room" Code="5434" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/jiqtqbfr/ijvwtewn.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/jiqtqbfr/ijvwtewn_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/jiqtqbfr/yqkbescv.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/jiqtqbfr/yqkbescv_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="7270" AccommodationId="7270" AccommodationName="Novotel Berlin Airport" NormalisedName="NOVOTEL BERLIN AIRPORT" MaxChildAge="16" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="3*" OfficialRating="3*" Supplier="BAR" BasicAdultCost="251.04" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="true">
+				<Address Address1="CL  KURT-SCHUMACHER-DAMM 202" CityOrTown="BERLIN" PostCode="13405"/>
+				<Description>The Hotel Novotel is located 5 minutes away from Berlin Tegel airport. An airport shuttle is provided. Cinemas, sights, fair grounds and other important places can be reached within a 10-30 minute drive.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/36/room-t.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/36/exterior-t.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="9195" AccommodationId="8282" AccommodationName="Hollywood Media Hotel" NormalisedName="HOLLYWOOD MEDIA" BoardCode="BB" ClassCode="4*" Supplier="JAC" BasicAdultCost="295.5" Currency="EUR" Availability="available" Type="Hotel" Bookable="true">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Kurfurstendamm 202" CityOrTown="Berlin" PostCode="10719" Country="DE"/>
+				<Description>The centrally located Hollywood Media Hotel is thoroughly unique, it is the first ever hotel dedicated to celluloid''s moving images. Lying directly on the Kurfuerstendamm, guests will experience a unique atmosphere of original film posters, photographs and paintings depicting many of the big heroes and beautiful divas of the movie world. All 185 guestrooms, suites and apartments are fully air-conditioned with hairdryers, safe, TV Internet access, satellite and pay-TV. "Allergy-free" rooms are also available in this individual and thoroughly recommended hotel.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Double Room" Code="12377" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+					<AccommodationUnit Name="Twin Room" Code="12378" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+					<AccommodationUnit Name="Triple Room" Code="12380" NumRooms="1" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="4"/>
+					<AccommodationUnit Name="Single Room" Code="12379" NumRooms="1" MaxOccupancy="1" MinOccupancy="1" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="1"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/yxcyqxcl/zcyjeipk.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/yxcyqxcl/zcyjeipk_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/yxcyqxcl/zbocwdap.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/yxcyqxcl/zbocwdap_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/yxcyqxcl/lmytqjtv.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/yxcyqxcl/lmytqjtv_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="9196" AccommodationId="13845" AccommodationName="Heckers" NormalisedName="HECKERS" BoardCode="BB" ClassCode="4*" Supplier="JAC" BasicAdultCost="346.5" Currency="EUR" Availability="available" Type="Unknown" Bookable="true">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Grolman Strasse 35" CityOrTown="Berlin" PostCode="10623" Country="DE"/>
+				<Description>A 4 star hotel combining traditional 4-star accommodation with designer public areas and a great location, perfect! Being situated just 50 meters off the Kurfuerstendamm is enviable; having a designer breakfast room is inspiring; having a traditional restaurant is comforting. All rooms at this 4-star property feature minibar, hairdryer, satellite TV, direct dial telephone and safe (by spring 2003 all rooms are scheduled to include AC). The Heckers hotel strives to offer personal service and attention to detail. Business or leisure guests alike are welcomed at the Heckers and invited to enjoy Berlin and its hospitality to the full.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Double Room" Code="12383" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+					<AccommodationUnit Name="Twin Room" Code="12384" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+					<AccommodationUnit Name="Single Room" Code="12385" NumRooms="1" MaxOccupancy="1" MinOccupancy="1" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="1"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/dfiefmea/hojpibvm.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/dfiefmea/hojpibvm_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/dfiefmea/ncvbmtqz.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/dfiefmea/ncvbmtqz_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="5899" AccommodationId="5899" AccommodationName="Berlin" NormalisedName="BERLIN" MaxChildAge="12" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="4*" OfficialRating="4*" Supplier="BAR" BasicAdultCost="382.85" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="true">
+				<Address Address1="CL  LUETZOWPLATZ 17" CityOrTown="BERLIN" PostCode="10785"/>
+				<Description>An accurate hotel description is not available at the moment.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/5/h09usT00.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/5/h09usT01.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="5858" AccommodationId="5858" AccommodationName="Estrel Berlin" NormalisedName="ESTREL BERLIN" MaxChildAge="12" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="4*" OfficialRating="4*" Supplier="BAR" BasicAdultCost="393.16" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="true">
+				<Address Address1="CL  SONNENALLEE 225" CityOrTown="BERLIN" PostCode="12057"/>
+				<Description>"The Estrel Hotel Berlin is a four-star superior hotel located adjacent to the Estrel Convention Centre and Festival Centre, which combine to form Europe's largest hotel/congress/entertainment complex.  In fact, with 1,125 rooms, the Estrel Hotel Berlin is the largest hotel in Germany.  With its size comes a facility with a full range of features - virtually everything a guest would need under one roof.  The hotel has six onsite restaurants, offering a variety of cuisines ranging from Thai to Italian.  There's even a beer garden and a nightclub on the premises.  The Estrel also hosts the most successful live show in Berlin, ""Stars in Concert,"" a Las Vegas style stage show."</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/397/exterior-t.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/397/room-t.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="8801" AccommodationId="13834" AccommodationName="Kempinski Bristol" NormalisedName="KEMPINSKI BRISTOL" BoardCode="BB" ClassCode="5*" Supplier="JAC" BasicAdultCost="394.98" Currency="EUR" Availability="available" Type="Unknown" Bookable="true">
+				<AvailableBoardBasis>BB</AvailableBoardBasis>
+				<Address Address1="Kurfurstendamm 27" CityOrTown="Berlin" PostCode="10719" Country="DE"/>
+				<Description>Located on Berlin''s longest and most popular boulevard, the Kurfuerstendamm,the 5-star Kempinski Bristol combines the classic with the modern. All 301 elegant rooms and luxurious suites are equipped to the highest standards and feature facilities normally associated with a hotel of this category. The in-house restaurants and bar, as well as their culinary and creative talents, are renowned throughout this fast-changing capital. The popularBristol Bar, a classical cocktail-bar, offers live music in the evening and guests should not fail to experience the pleasure of being spoiled with international and regional delicacies at any of the hotel''s famous restaurants. Thoroughly recommended by JAC as a rare opportunity to enjoy luxury surroundings at an affordable price.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="Double Room" Code="10622" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="3"/>
+					<AccommodationUnit Name="Twin Room" Code="10623" NumRooms="1" MaxOccupancy="2" MinOccupancy="2" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="2"/>
+					<AccommodationUnit Name="Single Room" Code="10624" NumRooms="1" MaxOccupancy="1" MinOccupancy="1" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="1"/>
+					<AccommodationUnit Name="Triple Room" Code="10625" NumRooms="1" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" RoomType="4"/>
+				</AccommodationUnits>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/gljslpeb/gabrzwtb.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/gljslpeb/gabrzwtb_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/gljslpeb/rctimjoh.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/gljslpeb/rctimjoh_thumb.jpg"/>
+				<Image URL="http://www.uptrips.com/pics/accom/jac/gljslpeb/clogeqpo.jpg" ThumbnailURL="http://www.uptrips.com/pics/accom/jac/gljslpeb/clogeqpo_thumb.jpg"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="5851" AccommodationId="5851" AccommodationName="Grand Hotel Esplanade" NormalisedName="GRAND ESPLANADE" MaxChildAge="12" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="5*" OfficialRating="5*" Supplier="BAR" BasicAdultCost="402.33" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Hotel" ContractCode="150.ID_B2B_1" Bookable="false">
+				<Address Address1="CL  LUTZOWUFER 15" CityOrTown="BERLIN" PostCode="10785"/>
+				<Description>"Centrally located between the Kurfirstendamm, Unter den Linden and Potsdamer Platz, opposite the Tiergarten Park, this designer hotel captures the spirit of contemporary Berlin in a sophisticated setting.   The hotel offers flexible and attractive conference and banqueting rooms for up to 450 people.  Hotel rooms have bathroom, WC, telephone, fax, modem-connection, radio, TV, safe, minibar, sound insulation, air conditioning, restaurants, 2 bars, swimming pool, whirlpool, 3 saunas, solarium, beauty centre, massage, fitness centre, hairdressing salon, 6 conference rooms for up to 450 persons, garage parking, and conference boat.  The ""Esplanade"" is a 5-star boat available for conferences, parties and private celebrations. "</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/31/exterior-t.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/31/room-t.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="5852" AccommodationId="5852" AccommodationName="Queens Berlin" NormalisedName="QUEENS BERLIN" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="4*" OfficialRating="4*" Supplier="BAR" BasicAdultCost="412.65" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="true">
+				<Address Address1="CL  GUNTZELSTRASSE 14" CityOrTown="BERLIN" PostCode="10717"/>
+				<Description>"The hotel is located only 10 minutes walk from the famous shopping street ""Kurfuerstendamm"" in the heart of Berlin. 108 rooms. Room facilities include TV, satellite television, in-house movie, radio, direct dial phone, minibar, hairdryer, trouser press, automatic wake-up call   The voltage is 220v.  Hotel facilities include guest rooms, baby cot, No-Smoking rooms, room safe, telephone (IDD), television (Cable) , babysitting, bar, conference rooms, laundry service, restaurant, room service."</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/37/exterior-t.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/37/room-t.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="8819" AccommodationId="8819" AccommodationName="NH Berlin-Mitte" NormalisedName="NH BERLIN-MITTE" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="4*" OfficialRating="4*" Supplier="BAR" BasicAdultCost="505.5" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="true">
+				<Address Address1="CL  LEIPZIGER STRASSE 106-111" CityOrTown="BERLIN" PostCode="10177"/>
+				<Description>An accurate hotel description is not available at the moment.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/1137/H0EYGT00.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/1137/H0EYGT01.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="9072" AccommodationId="9072" AccommodationName="Marriott Berlin" NormalisedName="MARRIOTT BERLIN" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="3*" OfficialRating="3*" Supplier="BAR" BasicAdultCost="591.48" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="false">
+				<Address Address1="CL  INGE-BEISHEIM PLATZ" CityOrTown="BERLIN" PostCode="10785"/>
+				<Description>An accurate hotel description is not available at the moment.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+			</AccommodationSegment>
+			<AccommodationSegment AccommodationCode="5855" AccommodationId="5855" AccommodationName="Westin Grand Berlin" NormalisedName="WESTIN GRAND BERLIN" MaxChildAge="12" SuppliersBoardCode="HD" BoardCode="BB" ClassCode="5*" OfficialRating="5*" Supplier="BAR" BasicAdultCost="629.31" Currency="EUR" Availability="available" SupplierLocationId="BER" Type="Unknown" ContractCode="150.ID_B2B_1" Bookable="true">
+				<Address Address1="CL  FRIEDRICHSTRASSE 158-164" CityOrTown="BERLIN" PostCode="10117"/>
+				<Description>Stay in the heart of Berlin, where the famous boulevard Unter den Linden meets Friedrichstrasse, at the Westin Grand Hotel.  Close to numerous attractions such as the Brandenburg Gate, Reichstag, Potsdamer Platz, and the Pergamon Museum, the hotel also places you near the exclusive shops of Friedrichstrasse and Kurfьrstendamm.</Description>
+				<AccommodationUnits>
+					<AccommodationUnit Name="TRIPLE STANDARD" Code="TPL.ST" MaxOccupancy="3" MinOccupancy="3" MaxExtraChildren="0" MaxExtraInfants="0" QuantityAvailable="999"/>
+				</AccommodationUnits>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/56/h0a2iT00.jpg" CaptionText="Hotel Photo"/>
+				<Image URL="http://www.hotelbeds.com/images/hotels/5/5282/56/h0a2iT0B.jpg" CaptionText="Generic Room Photo"/>
+			</AccommodationSegment>
+		</Accommodations>
+	</AccommodationSearchResponse>
+</FAB_AccomAvailRS>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OTA_AirLowFareSearchRQ EchoToken="0" SequenceNmbr="1" TransactionIdentifier="0">
+	<POS>
+		<Source ISOCurrency="EUR" PseudoCityCode="1G" TerminalID="1234">
+			<RequestorID ID="TC" Instance="2005-03-02T10:47:39" Type="1" URL="http://www.openjawtech.com"></RequestorID>
+		</Source>
+	</POS>
+	<OriginDestinationInformation>
+		<DepartureDateTime WindowAfter="P0D" WindowBefore="P0D">2007-02-07T00:00:00</DepartureDateTime>
+		<OriginLocation LocationCode="BCN"></OriginLocation>
+		<DestinationLocation LocationCode="STN"></DestinationLocation>
+	</OriginDestinationInformation>
+	<OriginDestinationInformation>
+		<DepartureDateTime WindowAfter="P0D" WindowBefore="P0D">2007-03-14T00:00:00</DepartureDateTime>
+		<OriginLocation LocationCode="STN"></OriginLocation>
+		<DestinationLocation LocationCode="BCN"></DestinationLocation>
+	</OriginDestinationInformation>
+	<SpecificFlightInfo>
+		<Airline Code="AB"></Airline>
+	</SpecificFlightInfo>
+	<TravelerInfoSummary>
+		<AirTravelerAvail>
+			<PassengerTypeQuantity Code="ADT" Quantity="1"></PassengerTypeQuantity>
+		</AirTravelerAvail>
+	</TravelerInfoSummary>
+	<FormData>
+		<INPUT name="MONAT" type="hidden" value=""></INPUT>
+		<INPUT name="JAHR" type="hidden" value=""></INPUT>
+		<INPUT name="MONAT2" type="hidden" value=""></INPUT>
+		<INPUT name="JAHR2" type="hidden" value=""></INPUT>
+		<INPUT name="woher" type="hidden" value="startseite"></INPUT>
+		<INPUT name="ref2" type="hidden" value="zanox@4856716C1861480077S333@130"></INPUT>
+		<Cookies>
+			<Cookie Domain="www.airberlin.com" Name="LangPref" Path="/" Value="eng%A7%A7%A71169460246"></Cookie>
+		</Cookies>
+	</FormData>
+</OTA_AirLowFareSearchRQ>
