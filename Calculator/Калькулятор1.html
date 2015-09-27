@@ -28,133 +28,72 @@
       height: 100%;
       font-size:60px;
       border-radius: 14px;
-      color: #3cc;
+      color: #3bb;
       background-color: #fff;
      }
-     .i0, .i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8, .i9, .multiply, .comma, .divide, .plus, .minus {
-      position: absolute;   
+     .button {
+      position: absolute;  
      }
-     .i0 {
+     .button input {
+      color: #3aa;
+     }
+     .i0, .comma, .plus {
+        top: 325px;
+     }
+     .i1, .i2, .i3, .clean, .delete {
+      top: 145px;
+     }
+     .i4, .i5, .i6, .multiply, .divide {
+      top: 205px;
+     }
+     .i7, .i8, .i9, .minus, .anyway {
+     top: 265px;  
+     }
+     .standart input {
+      width: 50px;
+      height: 45px;
+      font-size: 24px;
+     }
+     .i0, .i1, .i4, .i7 {
       left: 20px;
-      top: 325px;  
+     }
+     .i2, .i5, .i8 {
+      left: 85px;
+     }
+     .comma, .i3, .i6, .i9 {
+      left: 150px;
+     }
+     .plus, .minus, .multiply, .clean {
+      left: 215px;
+     }
+     .anyway, .divide, .delete {
+       left: 280px;
      }
      .i0 input {
       width: 115px;
       height: 45px;
-      
       font-size: 24px;
-      color: #3aa;
      }
-     .i1 {
-      left: 20px;
-      top: 145px;  
-     }
-     .i1 input {
+     .anyway input {
       width: 50px;
-      height: 45px;
-      
+      height: 105px;
       font-size: 24px;
-      color: #3aa;
      }
-     .i2 {
-      left: 85px;
-      top: 145px;  
+     .additScreen {height: 50px}
+     .additScreen input{
+      margin: 3%;
+      margin-top: 6%;
+      width: 94%;
+      border:0;
+      padding: 0;
+      text-align: right;
+      height: 100%;
+      font-size:16px;
+      color: #3bb;
+      background-color: #cccdef;
+      color: #66f;
      }
-     .i2 input {
-      width: 50px;
-      height: 45px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .i3 {
-      left: 150px;
-      top: 145px;  
-     }
-     .i3 input {
-      width: 50px;
-      height: 45px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .i4 {
-      left: 20px;
-      top: 205px;  
-     }
-     .i4 input {
-      width: 50px;
-      height: 45px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .i5 {
-      left: 90px;
-      top: 350px;  
-     }
-     .i5 input {
-      width: 35px;
-      height: 25px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .i6 {
-      left: 120px;
-      top: 350px;  
-     }
-     .i6 input {
-      width: 35px;
-      height: 25px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .i7 {
-      left: 20px;
-      top: 265px;  
-     }
-     .i7 input {
-      width: 50px;
-      height: 45px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .i8 {
-      left: 90px;
-      top: 310px;  
-     }
-     .i8 input {
-      width: 35px;
-      height: 25px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .i9 {
-      left: 120px;
-      top: 310px;  
-     }
-     .i9 input {
-      width: 35px;
-      height: 25px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
-     .comma {
-      left: 150px;
-      top: 325px;  
-     }
-     .comma input {
-      width: 50px;
-      height: 45px;
-      
-      font-size: 24px;
-      color: #3aa;
-     }
+     input[type]:hover { background-color: #eff}
   </style>
  </head>
  <body>
@@ -162,50 +101,62 @@
     <div class="screen">
       <input value="0" disabled="yes">
     </div>
-    <div class="i0">
+    <div class="i0 button">
       <input type="button" value="0">
     </div>
-    <div class="i1">
+    <div class="i1 standart button">
       <input type="button" value="1">
     </div>
-    <div class="i2">
+    <div class="i2 standart button">
       <input type="button" value="2">
     </div>
-    <div class="i3">
+    <div class="i3 standart button">
       <input type="button" value="3">
     </div>
-    <div class="i4">
+    <div class="i4 standart button">
       <input type="button" value="4">
     </div>
-    <div class="i5">
+    <div class="i5 standart button">
       <input type="button" value="5">
     </div>
-    <div class="i6">
+    <div class="i6 standart button">
       <input type="button" value="6">
     </div>
-    <div class="i7">
+    <div class="i7 standart button">
       <input type="button" value="7">
     </div>
-    <div class="i8">
+    <div class="i8 standart button">
       <input type="button" value="8">
     </div>
-    <div class="i9">
+    <div class="i9 standart button">
       <input type="button" value="9">
     </div>
-    <div class="comma">
+    <div class="comma standart button">
       <input type="button" value=",">
     </div>
-    <div class="multiply">
+    <div class="multiply standart button">
       <input type="button" value="*">
     </div>
-    <div class="divide">
+    <div class="divide standart button">
       <input type="button" value="/">
     </div>
-    <div class="plus">
+    <div class="plus standart button">
       <input type="button" value="+">
     </div>
-    <div class="minus">
+    <div class="minus standart button">
       <input type="button" value="-">
+    </div>
+    <div class="anyway button">
+      <input type="button" value="=">
+    </div>
+    <div class="clean standart button">
+      <input type="button" value="C">
+    </div>
+    <div class="delete standart button">
+      <input type="button" value="del">
+    </div>
+    <div class="additScreen">
+      <input value="" maxlength="36">
     </div>
   </div>
  </body>
